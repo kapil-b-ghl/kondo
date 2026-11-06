@@ -9,10 +9,20 @@ import DashboardB from './playground/fastpay/DashboardB.vue';
 import DashboardC from './playground/fastpay/DashboardC.vue';
 import Payments from './playground/fastpay/Payments.vue';
 import PaymentDetail from './playground/fastpay/PaymentDetail.vue';
+import LibraryHome from './library/LibraryHome.vue';
+import ComponentPage from './library/ComponentPage.vue';
+import TokensPage from './library/TokensPage.vue';
+import AuditPage from './library/AuditPage.vue';
+import HandoffPage from './library/HandoffPage.vue';
 
 const view = computed(() => {
   const r = route.value;
   let m;
+  if (r === '/' || r === '') return { c: LibraryHome };
+  if (r === '/tokens') return { c: TokensPage };
+  if (r === '/audit') return { c: AuditPage };
+  if ((m = r.match(/^\/c\/([\w-]+)$/))) return { c: ComponentPage, props: { id: m[1] }, key: m[1] };
+  if ((m = r.match(/^\/handoff\/([\w-]+)$/))) return { c: HandoffPage, props: { id: m[1] }, key: m[1] };
   if (r === '/spec/button') return { c: ButtonSpec };
   if (r === '/spec/elements') return { c: ElementsSpec };
   if (r === '/playground') return { c: PlaygroundIndex };
@@ -21,7 +31,7 @@ const view = computed(() => {
   if (r === '/p/fastpay/c/dashboard') return { c: DashboardC };
   if (r === '/p/fastpay/payments') return { c: Payments };
   if ((m = r.match(/^\/p\/fastpay\/payments\/([\w-]+)$/))) return { c: PaymentDetail, props: { id: m[1] }, key: m[1] };
-  return { c: PlaygroundIndex };
+  return { c: LibraryHome };
 });
 </script>
 

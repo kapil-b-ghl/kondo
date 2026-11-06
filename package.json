@@ -6,21 +6,30 @@
   "description": "HighRise component library and playground, generated from the HighRise 1.1 Figma file.",
   "scripts": {
     "tokens": "node scripts/build-tokens.mjs",
-    "gen": "node scripts/build-tokens.mjs && node scripts/build-button.mjs",
+    "gen": "node scripts/build-tokens.mjs && node scripts/build-button.mjs && node scripts/handoff.mjs",
     "dev": "npm run gen && vite",
     "build": "npm run gen && npm run check && vite build",
     "audit": "node scripts/audit.mjs",
-    "check": "node scripts/check-prototypes.mjs"
+    "check": "node scripts/check-prototypes.mjs",
+    "handoff": "node scripts/handoff.mjs",
+    "mcp": "node mcp/server.mjs",
+    "build:artifact": "npm run gen && npm run check && vite build -c vite.artifact.config.ts && node scripts/artifact.mjs"
   },
   "dependencies": {
     "@fontsource/inter": "^5.3.0",
+    "@modelcontextprotocol/sdk": "^1.32.2",
     "lucide-vue-next": "^1.0.0",
-    "vue": "^3.5.0"
+    "vue": "^3.5.0",
+    "zod": "^3.25.76"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.0",
     "typescript": "^5.6.0",
     "vite": "^6.0.0",
+    "vite-plugin-singlefile": "^2.3.4",
     "vue-tsc": "^2.1.0"
+  },
+  "bin": {
+    "highrise-mcp": "mcp/server.mjs"
   }
 }
