@@ -21,7 +21,8 @@ const props = withDefaults(
   }>(),
   { account: () => ({ name: 'BrightSmile Dental', location: 'San Francisco, CA', initials: 'BD' }), module: 'commerce' },
 );
-const sectionOpen = ref(true);
+// On small screens the section nav is an overlay, so it starts closed there.
+const sectionOpen = ref(typeof window === 'undefined' || window.innerWidth > 900);
 const modules = [
   { key: 'dashboard', label: 'Dashboard', icon: Gauge }, { key: 'ai', label: 'AI', icon: Sparkles }, { key: 'crm', label: 'CRM', icon: Contact },
   { key: 'conversations', label: 'Conversations', icon: MessageCircle }, { key: 'automations', label: 'Automations', icon: Workflow },
