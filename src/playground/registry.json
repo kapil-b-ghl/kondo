@@ -1,0 +1,96 @@
+{
+  "$about": "Every prototype in the playground. Status: draft · in-review · ready-for-dev. When a prototype is marked ready-for-dev, `npm run handoff` writes handoff/<id>.md for engineering.",
+  "prototypes": [
+    {
+      "id": "fastpay-j8-dashboard-a",
+      "title": "Fastpay dashboard · A · Overview",
+      "product": "FastPay (LC Payments)",
+      "journey": "J8.1 · J8.5 · J10.1",
+      "route": "/p/fastpay/dashboard",
+      "file": "src/playground/fastpay/DashboardA.vue",
+      "author": "Kapil",
+      "created": "2026-11-07",
+      "status": "in-review",
+      "idea": "Faithful build of the Claude design prototype: status banner, migration progress, four balance KPIs, money saved, recent payments with payouts and disputes beside them.",
+      "states": [
+        "ready",
+        "action",
+        "paused",
+        "negative",
+        "fresh",
+        "closing"
+      ]
+    },
+    {
+      "id": "fastpay-j8-dashboard-b",
+      "title": "Fastpay dashboard · B · Money timeline",
+      "product": "FastPay (LC Payments)",
+      "journey": "J8.1",
+      "route": "/p/fastpay/b/dashboard",
+      "file": "src/playground/fastpay/DashboardB.vue",
+      "author": "Kapil",
+      "created": "2026-11-07",
+      "status": "draft",
+      "idea": "Answer 'when do I get my money?' first. The balance is a four-step flow from today's sales to the bank, and whatever blocks the flow is shown on the step it blocks.",
+      "states": [
+        "ready",
+        "action",
+        "paused",
+        "negative",
+        "fresh",
+        "closing"
+      ]
+    },
+    {
+      "id": "fastpay-j8-dashboard-c",
+      "title": "Fastpay dashboard · C · To-do first",
+      "product": "FastPay (LC Payments)",
+      "journey": "J8.1 · J10 · J11",
+      "route": "/p/fastpay/c/dashboard",
+      "file": "src/playground/fastpay/DashboardC.vue",
+      "author": "Kapil",
+      "created": "2026-11-07",
+      "status": "draft",
+      "idea": "Most visits come from an email. Lead with a short queue of things only the merchant can act on, sorted by deadline, with balance in a compact side summary.",
+      "states": [
+        "ready",
+        "action",
+        "paused",
+        "negative",
+        "fresh",
+        "closing"
+      ]
+    },
+    {
+      "id": "fastpay-j8-payments",
+      "title": "Fastpay payments, detail and refund",
+      "product": "FastPay (LC Payments)",
+      "journey": "J8.2 · J8.3 · J8.4",
+      "route": "/p/fastpay/payments",
+      "file": "src/playground/fastpay/Payments.vue",
+      "author": "Kapil",
+      "created": "2026-11-07",
+      "status": "ready-for-dev",
+      "idea": "Filterable payments list, payment detail with fee and net breakdown and timeline, refund with the refund fee shown before confirming.",
+      "screens": [
+        "/p/fastpay/payments",
+        "/p/fastpay/payments/pay_7Q2KX9",
+        "/p/fastpay/payments/pay_7Q2KX9?refund=1",
+        "/p/fastpay/payments/pay_7Q2KJ2"
+      ],
+      "states": [
+        "list",
+        "filtered-empty",
+        "detail",
+        "refund-full",
+        "refund-partial",
+        "disputed",
+        "failed",
+        "no-permission"
+      ],
+      "files": [
+        "src/playground/fastpay/PaymentDetail.vue"
+      ]
+    }
+  ]
+}

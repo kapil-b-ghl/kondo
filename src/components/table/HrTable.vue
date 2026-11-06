@@ -43,7 +43,7 @@ defineEmits<{ rowClick: [Row] }>();
   font: var(--hr-text-lg); font-weight: var(--hr-font-weight-semibold); color: var(--hr-color-neutral-gray-900);
 }
 .hr-table td {
-  height: 48px; padding: 0 12px; border-bottom: 1px solid var(--hr-color-neutral-gray-200);
+  height: 48px; padding: 0 12px; border-bottom: 1px solid var(--hr-color-neutral-gray-200); white-space: nowrap;
   font: var(--hr-text-lg); font-weight: var(--hr-font-weight-medium); color: var(--hr-color-neutral-gray-600);
   font-variant-numeric: tabular-nums;
 }

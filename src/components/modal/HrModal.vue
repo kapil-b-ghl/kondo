@@ -25,7 +25,7 @@ function onKey(e: KeyboardEvent) {
   }
 }
 watch(open, async (v) => {
-  if (v) { opener = document.activeElement as HTMLElement; await nextTick(); (panel.value?.querySelector<HTMLElement>('[autofocus], input, button.hr-btn--primary') ?? panel.value)?.focus(); }
+  if (v) { opener = document.activeElement as HTMLElement; await nextTick(); (panel.value?.querySelector<HTMLElement>('[autofocus], input') ?? panel.value)?.focus(); }
   else opener?.focus();
 }, { immediate: true });
 onBeforeUnmount(() => opener?.focus());

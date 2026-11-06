@@ -8,8 +8,9 @@
     "tokens": "node scripts/build-tokens.mjs",
     "gen": "node scripts/build-tokens.mjs && node scripts/build-button.mjs",
     "dev": "npm run gen && vite",
-    "build": "npm run gen && vite build",
-    "audit": "node scripts/audit.mjs"
+    "build": "npm run gen && npm run check && vite build",
+    "audit": "node scripts/audit.mjs",
+    "check": "node scripts/check-prototypes.mjs"
   },
   "dependencies": {
     "@fontsource/inter": "^5.3.0",
