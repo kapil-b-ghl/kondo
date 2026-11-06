@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import LibraryLayout from './LibraryLayout.vue';
 import { HrTag } from '../components';
-import { components, totals, protos, slug, STATUS, palette } from './lib';
+import { components, totals, protos, slug, STATUS, palette, coverage, figma } from './lib';
 
+const notBuilt = figma.entries.filter((e) => e.section !== 'Tokens' && e.sets.length && !e.built.length);
 const recent = protos.slice().reverse();
 const swatch = ['primary/blue', 'neutral/gray', 'secondary/success', 'secondary/warning', 'secondary/error'].map((k) => palette[k][7]);
 const pTone = (s: string) => (s === 'ready-for-dev' ? 'success' : s === 'in-review' ? 'primary' : 'gray') as 'success' | 'primary' | 'gray';
@@ -15,6 +16,7 @@ const pTone = (s: string) => (s === 'ready-for-dev' ? 'success' : s === 'in-revi
         <h1>HighRise in code.</h1>
         <p>Every token, component and prototype here is generated from the HighRise 1.1 Figma file and checked against it. Designers prototype with these components, PMs review working screens, and engineers get the same code.</p>
         <dl class="stats">
+          <div><dt>Figma components in code</dt><dd>{{ coverage.inCode }}<small> of {{ coverage.figmaComponents }}</small></dd></div>
           <div><dt>Components</dt><dd>{{ totals.components }}</dd></div>
           <div><dt>Prototypes</dt><dd>{{ totals.screens }}</dd></div>
           <div><dt>Tokens</dt><dd>{{ totals.tokens }}</dd></div>
@@ -59,7 +61,11 @@ const pTone = (s: string) => (s === 'ready-for-dev' ? 'success' : s === 'in-revi
           <div v-for="(meta, key) in STATUS" :key="key" class="byst__col">
             <HrTag :color="meta.color" size="sm">{{ meta.label }}</HrTag>
             <a v-for="c in components.filter((x) => x.status === key)" :key="c.tag" :href="`#/c/${slug(c.name)}`">{{ c.name }}</a>
-            <span v-if="!components.some((x) => x.status === key)" class="muted">None</span>
+            <template v-if="key === 'not-started'">
+              <a v-for="e in notBuilt.slice(0, 10)" :key="e.page" :href="`#/f/${e.slug}`" class="is-todo">{{ e.name }}</a>
+              <a v-if="notBuilt.length > 10" href="#/audit">and {{ notBuilt.length - 10 }} more</a>
+            </template>
+            <span v-else-if="!components.some((x) => x.status === key)" class="muted">None</span>
           </div>
         </div>
       </section>
@@ -102,6 +108,8 @@ h2 { margin: 0 0 12px; font: var(--hr-text-3xl); font-weight: var(--hr-font-weig
 .hist li { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--hr-border-neutral-subtle-1); }
 .hist a, .byst a { font: var(--hr-text-lg); font-weight: var(--hr-font-weight-medium); color: var(--hr-text-primary-body-1); text-decoration: none; }
 .hist a:hover, .byst a:hover { text-decoration: underline; }
+.stats small { font: var(--hr-text-2xl); color: var(--hr-text-neutral-base); font-weight: var(--hr-font-weight-medium); }
+.byst a.is-todo { color: var(--hr-text-neutral-body-2); font-weight: var(--hr-font-weight-regular); }
 .muted { font: var(--hr-text-md); color: var(--hr-text-neutral-base); }
 .byst { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; }
 .byst__col { display: flex; flex-direction: column; gap: 6px; align-items: flex-start; }

@@ -2,13 +2,15 @@
 import { computed } from 'vue';
 import LibraryLayout from './LibraryLayout.vue';
 import Demo from './Demo.vue';
+import FigmaReference from './FigmaReference.vue';
 import { HrTag, HrButton, HrEmptyState } from '../components';
-import { components, slug, STATUS, SEVERITY, figmaLink } from './lib';
+import { components, slug, STATUS, SEVERITY, figmaLink, entryFor } from './lib';
 
 const props = defineProps<{ id: string }>();
 const c = computed(() => components.find((x) => slug(x.name) === props.id));
 const order = ['likely-figma-error', 'needs-design-decision', 'info'];
 const gaps = computed(() => (c.value ? [...c.value.gaps].sort((a, b) => order.indexOf(a.severity) - order.indexOf(b.severity)) : []));
+const fig = computed(() => (c.value ? entryFor(c.value) : undefined));
 const usage = computed(() => (c.value ? `import { ${c.value.tag} } from '@/components';` : ''));
 </script>
 
@@ -33,6 +35,11 @@ const usage = computed(() => (c.value ? `import { ${c.value.tag} } from '@/compo
       <section>
         <h2>Use it</h2>
         <pre class="cp__code"><code>{{ usage }}</code></pre>
+      </section>
+
+      <section v-if="fig">
+        <h2>In Figma</h2>
+        <FigmaReference :entry="fig" />
       </section>
 
       <section>

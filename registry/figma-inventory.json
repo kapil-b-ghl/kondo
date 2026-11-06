@@ -1,0 +1,3197 @@
+{
+  "figmaFile": "https://www.figma.com/design/emjjdhZIMlqbszmzP9PdS6/HighRise-1.1",
+  "source": "HighRise 1.1 · every page and published component set, pulled with the Figma MCP",
+  "sections": [
+    "Elements",
+    "Components",
+    "Groups",
+    "Medium Groups",
+    "Large Groups",
+    "Super Groups",
+    "Backlog",
+    "Tokens"
+  ],
+  "coverage": {
+    "figmaComponents": 59,
+    "inCode": 15,
+    "pages": 73
+  },
+  "codeOnly": [
+    "HrAppShell",
+    "HrDescriptionList",
+    "HrTimeline"
+  ],
+  "entries": [
+    {
+      "slug": "typography",
+      "name": "Typography",
+      "section": "Tokens",
+      "page": "18:1951",
+      "main": "26951:3967",
+      "preview": null,
+      "variants": 48,
+      "sets": [
+        {
+          "name": "Hint text",
+          "node": "26951:3967",
+          "variants": 18,
+          "axes": [
+            {
+              "name": "Size",
+              "values": 6
+            },
+            {
+              "name": "Error",
+              "values": 2
+            },
+            {
+              "name": "Disabled",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Label",
+          "node": "26951:17805",
+          "variants": 12,
+          "axes": [
+            {
+              "name": "Size",
+              "values": 6
+            },
+            {
+              "name": "Disabled",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Input Text",
+          "node": "27376:6411",
+          "variants": 18,
+          "axes": [
+            {
+              "name": "Size",
+              "values": 6
+            },
+            {
+              "name": "Disabled",
+              "values": 2
+            },
+            {
+              "name": "Placeholder",
+              "values": 2
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "logos",
+      "name": "Logos",
+      "section": "Tokens",
+      "page": "1083:118533",
+      "main": "1345:407",
+      "preview": null,
+      "variants": 16,
+      "sets": [
+        {
+          "name": "Press logo",
+          "node": "1345:407",
+          "variants": 11,
+          "axes": [
+            {
+              "name": "Company",
+              "values": 11
+            }
+          ]
+        },
+        {
+          "name": "GHL logo",
+          "node": "1294:159565",
+          "variants": 3,
+          "axes": [
+            {
+              "name": "Logotype",
+              "values": 2
+            },
+            {
+              "name": "Color",
+              "values": 3
+            },
+            {
+              "name": "Property 1",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Logo",
+          "node": "1894:485082",
+          "variants": 2,
+          "axes": [
+            {
+              "name": "Dark mode",
+              "values": 2
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "icon",
+      "name": "Icon",
+      "section": "Tokens",
+      "page": "3463:407484",
+      "main": "27272:4826",
+      "preview": null,
+      "variants": 429,
+      "sets": [
+        {
+          "name": "Icon",
+          "node": "27272:4826",
+          "variants": 209,
+          "axes": [
+            {
+              "name": "Size",
+              "values": 11
+            },
+            {
+              "name": "Featured",
+              "values": 2
+            },
+            {
+              "name": "Type",
+              "values": 10
+            },
+            {
+              "name": "Circular(Featured)",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Action Icon",
+          "node": "27377:2045",
+          "variants": 220,
+          "axes": [
+            {
+              "name": "State",
+              "values": 4
+            },
+            {
+              "name": "Size",
+              "values": 11
+            },
+            {
+              "name": "Scenario",
+              "values": 5
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "avatar",
+      "name": "Avatar",
+      "section": "Elements",
+      "page": "18:1350",
+      "main": "26683:71804",
+      "preview": "26683-71804.webp",
+      "variants": 156,
+      "sets": [
+        {
+          "name": "Avatar",
+          "node": "26683:71804",
+          "variants": 156,
+          "axes": [
+            {
+              "name": "Size",
+              "values": 8
+            },
+            {
+              "name": "Placeholder",
+              "values": 2
+            },
+            {
+              "name": "Text",
+              "values": 2
+            },
+            {
+              "name": "Status icon",
+              "values": 4
+            },
+            {
+              "name": "State",
+              "values": 1
+            },
+            {
+              "name": "Rounded",
+              "values": 2
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "tag",
+      "name": "Tag",
+      "section": "Elements",
+      "page": "12:539",
+      "main": "26957:99489",
+      "preview": "26957-99489.webp",
+      "variants": 840,
+      "sets": [
+        {
+          "name": "Tag",
+          "node": "26957:99489",
+          "variants": 832,
+          "axes": [
+            {
+              "name": "Size",
+              "values": 4
+            },
+            {
+              "name": "Color",
+              "values": 13
+            },
+            {
+              "name": "State",
+              "values": 4
+            },
+            {
+              "name": "Rounded",
+              "values": 2
+            },
+            {
+              "name": "Outline",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Tag Group",
+          "node": "27377:20440",
+          "variants": 8,
+          "axes": [
+            {
+              "name": "Size",
+              "values": 4
+            },
+            {
+              "name": "Multiple",
+              "values": 2
+            }
+          ]
+        }
+      ],
+      "built": [
+        "HrTag"
+      ]
+    },
+    {
+      "slug": "card",
+      "name": "Card",
+      "section": "Elements",
+      "page": "28016:19287",
+      "main": null,
+      "preview": null,
+      "variants": 0,
+      "sets": [],
+      "built": []
+    },
+    {
+      "slug": "button",
+      "name": "Button",
+      "section": "Elements",
+      "page": "1:1183",
+      "main": "26682:45841",
+      "preview": "26682-45841.webp",
+      "variants": 1848,
+      "sets": [
+        {
+          "name": "Button",
+          "node": "26682:45841",
+          "variants": 1800,
+          "axes": [
+            {
+              "name": "Size",
+              "values": 8
+            },
+            {
+              "name": "Variant",
+              "values": 5
+            },
+            {
+              "name": "Icon",
+              "values": 2
+            },
+            {
+              "name": "State",
+              "values": 5
+            },
+            {
+              "name": "Theme",
+              "values": 5
+            }
+          ]
+        },
+        {
+          "name": "Action Group",
+          "node": "28453:135863",
+          "variants": 48,
+          "axes": [
+            {
+              "name": "Icon Only",
+              "values": 2
+            },
+            {
+              "name": "Size",
+              "values": 6
+            },
+            {
+              "name": "Direction",
+              "values": 2
+            },
+            {
+              "name": "Multiple",
+              "values": 2
+            }
+          ]
+        }
+      ],
+      "built": [
+        "HrButton"
+      ]
+    },
+    {
+      "slug": "checkbox",
+      "name": "Checkbox",
+      "section": "Elements",
+      "page": "1097:63638",
+      "main": "26949:6776",
+      "preview": "26949-6776.webp",
+      "variants": 138,
+      "sets": [
+        {
+          "name": "Checkbox",
+          "node": "26949:6776",
+          "variants": 90,
+          "axes": [
+            {
+              "name": "Size",
+              "values": 6
+            },
+            {
+              "name": "State",
+              "values": 4
+            },
+            {
+              "name": "Checked",
+              "values": 2
+            },
+            {
+              "name": "Indeterminate",
+              "values": 2
+            },
+            {
+              "name": "Error",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Checkbox (labelled)",
+          "node": "29443:66230",
+          "variants": 48,
+          "axes": [
+            {
+              "name": "Size",
+              "values": 6
+            },
+            {
+              "name": "Checkbox Direction",
+              "values": 2
+            },
+            {
+              "name": "Disabled",
+              "values": 2
+            },
+            {
+              "name": "Lite",
+              "values": 2
+            }
+          ]
+        }
+      ],
+      "built": [
+        "HrCheckbox"
+      ]
+    },
+    {
+      "slug": "divider",
+      "name": "Divider",
+      "section": "Elements",
+      "page": "780:0",
+      "main": "26683:85319",
+      "preview": "26683-85319.webp",
+      "variants": 3,
+      "sets": [
+        {
+          "name": "Divider",
+          "node": "26683:85319",
+          "variants": 3,
+          "axes": [
+            {
+              "name": "Text Align",
+              "values": 3
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "radio",
+      "name": "Radio",
+      "section": "Elements",
+      "page": "26962:14076",
+      "main": "28425:178392",
+      "preview": "28425-178392.webp",
+      "variants": 108,
+      "sets": [
+        {
+          "name": "Radio",
+          "node": "28425:178392",
+          "variants": 60,
+          "axes": [
+            {
+              "name": "Size",
+              "values": 6
+            },
+            {
+              "name": "State",
+              "values": 4
+            },
+            {
+              "name": "Checked",
+              "values": 2
+            },
+            {
+              "name": "Error",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Radio (labelled)",
+          "node": "29443:29189",
+          "variants": 48,
+          "axes": [
+            {
+              "name": "Size",
+              "values": 6
+            },
+            {
+              "name": "Radio Direction",
+              "values": 2
+            },
+            {
+              "name": "Disabled",
+              "values": 2
+            },
+            {
+              "name": "Lite",
+              "values": 2
+            }
+          ]
+        }
+      ],
+      "built": [
+        "HrRadio"
+      ]
+    },
+    {
+      "slug": "loader",
+      "name": "Loader",
+      "section": "Elements",
+      "page": "1172:32",
+      "main": "27257:797",
+      "preview": "27257-797.webp",
+      "variants": 10,
+      "sets": [
+        {
+          "name": "Loader",
+          "node": "27257:797",
+          "variants": 4,
+          "axes": [
+            {
+              "name": "Style",
+              "values": 1
+            },
+            {
+              "name": "Size",
+              "values": 4
+            }
+          ]
+        },
+        {
+          "name": "Loading Circle",
+          "node": "33385:849",
+          "variants": 4,
+          "axes": [
+            {
+              "name": "Property 1",
+              "values": 4
+            }
+          ]
+        },
+        {
+          "name": "Loading Bar",
+          "node": "35893:450",
+          "variants": 2,
+          "axes": [
+            {
+              "name": "State",
+              "values": 2
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "toggle-switch",
+      "name": "Toggle Switch",
+      "section": "Elements",
+      "page": "1102:4631",
+      "main": "26953:5957",
+      "preview": "26953-5957.webp",
+      "variants": 78,
+      "sets": [
+        {
+          "name": "Toggle",
+          "node": "26953:5957",
+          "variants": 30,
+          "axes": [
+            {
+              "name": "Pressed",
+              "values": 2
+            },
+            {
+              "name": "Size",
+              "values": 3
+            },
+            {
+              "name": "State",
+              "values": 4
+            },
+            {
+              "name": "Error",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Toggle Switch",
+          "node": "29443:110032",
+          "variants": 48,
+          "axes": [
+            {
+              "name": "Size",
+              "values": 6
+            },
+            {
+              "name": "Disabled",
+              "values": 2
+            },
+            {
+              "name": "Toggle Direction",
+              "values": 2
+            },
+            {
+              "name": "Lite",
+              "values": 2
+            }
+          ]
+        }
+      ],
+      "built": [
+        "HrToggle"
+      ]
+    },
+    {
+      "slug": "tooltip",
+      "name": "Tooltip",
+      "section": "Elements",
+      "page": "1052:485",
+      "main": "26683:76792",
+      "preview": "26683-76792.webp",
+      "variants": 182,
+      "sets": [
+        {
+          "name": "Tooltip",
+          "node": "26683:76792",
+          "variants": 182,
+          "axes": [
+            {
+              "name": "Theme",
+              "values": 7
+            },
+            {
+              "name": "Arrow",
+              "values": 6
+            },
+            {
+              "name": "Arrow Position",
+              "values": 3
+            },
+            {
+              "name": "Custom",
+              "values": 2
+            }
+          ]
+        }
+      ],
+      "built": [
+        "HrTooltip"
+      ]
+    },
+    {
+      "slug": "alert",
+      "name": "Alert",
+      "section": "Components",
+      "page": "26683:85762",
+      "main": "1130:81134",
+      "preview": "1130-81134.webp",
+      "variants": 12,
+      "sets": [
+        {
+          "name": "Alert",
+          "node": "1130:81134",
+          "variants": 12,
+          "axes": [
+            {
+              "name": "Color",
+              "values": 6
+            },
+            {
+              "name": "Inline",
+              "values": 2
+            }
+          ]
+        }
+      ],
+      "built": [
+        "HrAlert"
+      ]
+    },
+    {
+      "slug": "avatar-group",
+      "name": "Avatar Group",
+      "section": "Components",
+      "page": "27536:25707",
+      "main": "26683:72318",
+      "preview": "26683-72318.webp",
+      "variants": 14,
+      "sets": [
+        {
+          "name": "Avatar group",
+          "node": "26683:72318",
+          "variants": 10,
+          "axes": [
+            {
+              "name": "Size",
+              "values": 5
+            },
+            {
+              "name": "Stacked",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Avatar with Label",
+          "node": "26683:71563",
+          "variants": 4,
+          "axes": [
+            {
+              "name": "Size",
+              "values": 4
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "content-switcher",
+      "name": "Content Switcher",
+      "section": "Components",
+      "page": "16:399",
+      "main": "26901:4400",
+      "preview": "26901-4400.webp",
+      "variants": 36,
+      "sets": [
+        {
+          "name": "Content Switcher",
+          "node": "26901:4400",
+          "variants": 36,
+          "axes": [
+            {
+              "name": "Variant",
+              "values": 2
+            },
+            {
+              "name": "Icon",
+              "values": 2
+            },
+            {
+              "name": "Size",
+              "values": 6
+            },
+            {
+              "name": "Icon Only",
+              "values": 2
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "checkbox-card-group",
+      "name": "Checkbox Card Group",
+      "section": "Components",
+      "page": "27536:9707",
+      "main": "28713:46278",
+      "preview": "28713-46278.webp",
+      "variants": 23,
+      "sets": [
+        {
+          "name": "Checkbox Card Group",
+          "node": "28713:46278",
+          "variants": 2,
+          "axes": [
+            {
+              "name": "Direction",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Checkbox Card",
+          "node": "26951:12512",
+          "variants": 21,
+          "axes": [
+            {
+              "name": "State",
+              "values": 4
+            },
+            {
+              "name": "Error",
+              "values": 2
+            },
+            {
+              "name": "Description",
+              "values": 2
+            },
+            {
+              "name": "Custom",
+              "values": 2
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "checkbox-group",
+      "name": "Checkbox Group",
+      "section": "Components",
+      "page": "27536:9627",
+      "main": "26951:2888",
+      "preview": "26951-2888.webp",
+      "variants": 24,
+      "sets": [
+        {
+          "name": "Checkbox Group",
+          "node": "26951:2888",
+          "variants": 24,
+          "axes": [
+            {
+              "name": "Size",
+              "values": 6
+            },
+            {
+              "name": "Direction",
+              "values": 2
+            },
+            {
+              "name": "Disabled",
+              "values": 2
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "date-picker",
+      "name": "Date Picker",
+      "section": "Components",
+      "page": "1143:85678",
+      "main": "27344:49200",
+      "preview": "27344-49200.webp",
+      "variants": 29,
+      "sets": [
+        {
+          "name": "Picker Menu",
+          "node": "27344:49200",
+          "variants": 18,
+          "axes": [
+            {
+              "name": "Type",
+              "values": 9
+            },
+            {
+              "name": "Footer Options Position",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Dates",
+          "node": "27344:47235",
+          "variants": 11,
+          "axes": [
+            {
+              "name": "State",
+              "values": 4
+            },
+            {
+              "name": "Hover",
+              "values": 2
+            },
+            {
+              "name": "Range",
+              "values": 2
+            },
+            {
+              "name": "Range Start",
+              "values": 2
+            },
+            {
+              "name": "Range End",
+              "values": 2
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "dropdown-menu",
+      "name": "Dropdown Menu",
+      "section": "Components",
+      "page": "18:0",
+      "main": "28430:223073",
+      "preview": "28430-223073.webp",
+      "variants": 32,
+      "sets": [
+        {
+          "name": "Dropdown",
+          "node": "28430:223073",
+          "variants": 11,
+          "axes": [
+            {
+              "name": "No. of Items",
+              "values": 11
+            }
+          ]
+        },
+        {
+          "name": "Dropdown List Item",
+          "node": "26683:55162",
+          "variants": 21,
+          "axes": [
+            {
+              "name": "Type",
+              "values": 6
+            },
+            {
+              "name": "State",
+              "values": 4
+            },
+            {
+              "name": "Size",
+              "values": 1
+            },
+            {
+              "name": "Lite",
+              "values": 2
+            },
+            {
+              "name": "Multi Select",
+              "values": 2
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "file-uploader",
+      "name": "File Uploader",
+      "section": "Components",
+      "page": "1157:90306",
+      "main": "26953:22868",
+      "preview": "26953-22868.webp",
+      "variants": 30,
+      "sets": [
+        {
+          "name": "File Uploader",
+          "node": "26953:22868",
+          "variants": 5,
+          "axes": [
+            {
+              "name": "Files queued",
+              "values": 2
+            },
+            {
+              "name": "State",
+              "values": 3
+            }
+          ]
+        },
+        {
+          "name": "File",
+          "node": "26953:22730",
+          "variants": 5,
+          "axes": [
+            {
+              "name": "State",
+              "values": 5
+            }
+          ]
+        },
+        {
+          "name": "File Upload Icon",
+          "node": "26953:27821",
+          "variants": 16,
+          "axes": [
+            {
+              "name": "Type",
+              "values": 4
+            },
+            {
+              "name": "Error",
+              "values": 2
+            },
+            {
+              "name": "Success",
+              "values": 2
+            },
+            {
+              "name": "Disabled",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Files",
+          "node": "28452:49947",
+          "variants": 4,
+          "axes": [
+            {
+              "name": "No. of Files",
+              "values": 4
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "inline-editor",
+      "name": "Inline Editor",
+      "section": "Components",
+      "page": "27372:79708",
+      "main": "27377:571",
+      "preview": "27377-571.webp",
+      "variants": 264,
+      "sets": [
+        {
+          "name": "Inline Editor",
+          "node": "27377:571",
+          "variants": 65,
+          "axes": [
+            {
+              "name": "State",
+              "values": 4
+            },
+            {
+              "name": "Size",
+              "values": 5
+            },
+            {
+              "name": "Error",
+              "values": 2
+            },
+            {
+              "name": "Warning",
+              "values": 2
+            },
+            {
+              "name": "Disabled",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Inline Text Area Editor",
+          "node": "34975:12355",
+          "variants": 65,
+          "axes": [
+            {
+              "name": "State",
+              "values": 4
+            },
+            {
+              "name": "Size",
+              "values": 5
+            },
+            {
+              "name": "Error",
+              "values": 2
+            },
+            {
+              "name": "Warning",
+              "values": 2
+            },
+            {
+              "name": "Disabled",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Inline Date Picker",
+          "node": "35708:19395",
+          "variants": 130,
+          "axes": [
+            {
+              "name": "State",
+              "values": 4
+            },
+            {
+              "name": "Size",
+              "values": 5
+            },
+            {
+              "name": "Error",
+              "values": 2
+            },
+            {
+              "name": "Warning",
+              "values": 2
+            },
+            {
+              "name": "Disabled",
+              "values": 2
+            },
+            {
+              "name": "Type",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Inline File Upload Editor",
+          "node": "34980:38321",
+          "variants": 4,
+          "axes": [
+            {
+              "name": "State",
+              "values": 2
+            },
+            {
+              "name": "Disabled",
+              "values": 2
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "select",
+      "name": "Select",
+      "section": "Components",
+      "page": "26683:56197",
+      "main": "26683:57778",
+      "preview": "26683-57778.webp",
+      "variants": 120,
+      "sets": [
+        {
+          "name": "Select",
+          "node": "26683:57778",
+          "variants": 120,
+          "axes": [
+            {
+              "name": "Type",
+              "values": 5
+            },
+            {
+              "name": "State",
+              "values": 4
+            },
+            {
+              "name": "Size",
+              "values": 6
+            }
+          ]
+        }
+      ],
+      "built": [
+        "HrSelect"
+      ]
+    },
+    {
+      "slug": "input-field",
+      "name": "Input Field",
+      "section": "Components",
+      "page": "85:1269",
+      "main": "26683:37578",
+      "preview": "26683-37578.webp",
+      "variants": 924,
+      "sets": [
+        {
+          "name": "Input Field",
+          "node": "26683:37578",
+          "variants": 924,
+          "axes": [
+            {
+              "name": "Size",
+              "values": 6
+            },
+            {
+              "name": "Type",
+              "values": 14
+            },
+            {
+              "name": "Destructive",
+              "values": 2
+            },
+            {
+              "name": "State",
+              "values": 4
+            },
+            {
+              "name": "Filled",
+              "values": 2
+            }
+          ]
+        }
+      ],
+      "built": [
+        "HrInput"
+      ]
+    },
+    {
+      "slug": "input-otp",
+      "name": "Input OTP",
+      "section": "Components",
+      "page": "26683:46171",
+      "main": "27258:2707",
+      "preview": "27258-2707.webp",
+      "variants": 54,
+      "sets": [
+        {
+          "name": "OTP Input",
+          "node": "27258:2707",
+          "variants": 54,
+          "axes": [
+            {
+              "name": "Size",
+              "values": 6
+            },
+            {
+              "name": "Digits",
+              "values": 3
+            },
+            {
+              "name": "Error",
+              "values": 2
+            },
+            {
+              "name": "Disabled",
+              "values": 2
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "input-slider",
+      "name": "Input Slider",
+      "section": "Components",
+      "page": "1086:1423",
+      "main": "26952:5822",
+      "preview": "26952-5822.webp",
+      "variants": 36,
+      "sets": [
+        {
+          "name": "Input Slider",
+          "node": "26952:5822",
+          "variants": 36,
+          "axes": [
+            {
+              "name": "Size",
+              "values": 6
+            },
+            {
+              "name": "Disabled",
+              "values": 2
+            },
+            {
+              "name": "Error",
+              "values": 2
+            },
+            {
+              "name": "Dual",
+              "values": 2
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "coach-mark",
+      "name": "Coach Mark",
+      "section": "Components",
+      "page": "27722:22867",
+      "main": "37618:3836",
+      "preview": "37618-3836.webp",
+      "variants": 52,
+      "sets": [
+        {
+          "name": "Coach Mark",
+          "node": "37618:3836",
+          "variants": 52,
+          "axes": [
+            {
+              "name": "Arrow",
+              "values": 5
+            },
+            {
+              "name": "Arrow Position",
+              "values": 6
+            },
+            {
+              "name": "Type",
+              "values": 2
+            },
+            {
+              "name": "Theme",
+              "values": 2
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "progress-indicator",
+      "name": "Progress Indicator",
+      "section": "Components",
+      "page": "1154:89940",
+      "main": "26953:50472",
+      "preview": "26953-50472.webp",
+      "variants": 77,
+      "sets": [
+        {
+          "name": "Progress Indicator",
+          "node": "26953:50472",
+          "variants": 7,
+          "axes": [
+            {
+              "name": "State",
+              "values": 4
+            },
+            {
+              "name": "Stepper",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Progress circle",
+          "node": "1154:89981",
+          "variants": 70,
+          "axes": [
+            {
+              "name": "Theme",
+              "values": 5
+            },
+            {
+              "name": "Size",
+              "values": 6
+            },
+            {
+              "name": "Shape",
+              "values": 3
+            },
+            {
+              "name": "Label",
+              "values": 2
+            },
+            {
+              "name": "Progress",
+              "values": 6
+            },
+            {
+              "name": "Type",
+              "values": 2
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "progress-steps",
+      "name": "Progress Steps",
+      "section": "Components",
+      "page": "53:1288",
+      "main": "27043:7342",
+      "preview": "27043-7342.webp",
+      "variants": 38,
+      "sets": [
+        {
+          "name": "Progress Steps",
+          "node": "27043:7342",
+          "variants": 2,
+          "axes": [
+            {
+              "name": "Pill Type",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Progress Step",
+          "node": "26956:11571",
+          "variants": 12,
+          "axes": [
+            {
+              "name": "State",
+              "values": 6
+            },
+            {
+              "name": "Direction",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Progress Step Icon",
+          "node": "26955:8706",
+          "variants": 11,
+          "axes": [
+            {
+              "name": "State",
+              "values": 6
+            },
+            {
+              "name": "Icon",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Pill Progress Steps",
+          "node": "33395:725",
+          "variants": 7,
+          "axes": [
+            {
+              "name": "Count on Start",
+              "values": 2
+            },
+            {
+              "name": "Label",
+              "values": 2
+            },
+            {
+              "name": "Direction",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Default Progress Steps",
+          "node": "33395:989",
+          "variants": 2,
+          "axes": [
+            {
+              "name": "Direction",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Progress Hint text",
+          "node": "33401:993",
+          "variants": 4,
+          "axes": [
+            {
+              "name": "State",
+              "values": 4
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "quick-action-menu",
+      "name": "Quick Action Menu",
+      "section": "Components",
+      "page": "27339:247227",
+      "main": null,
+      "preview": null,
+      "variants": 0,
+      "sets": [],
+      "built": []
+    },
+    {
+      "slug": "radio-card-group",
+      "name": "Radio Card Group",
+      "section": "Components",
+      "page": "27536:9709",
+      "main": "28713:46566",
+      "preview": "28713-46566.webp",
+      "variants": 23,
+      "sets": [
+        {
+          "name": "Radio Card Group",
+          "node": "28713:46566",
+          "variants": 2,
+          "axes": [
+            {
+              "name": "Direction",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Radio Card",
+          "node": "26962:14078",
+          "variants": 21,
+          "axes": [
+            {
+              "name": "State",
+              "values": 4
+            },
+            {
+              "name": "Error",
+              "values": 2
+            },
+            {
+              "name": "Description",
+              "values": 2
+            },
+            {
+              "name": "Custom",
+              "values": 2
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "radio-group",
+      "name": "Radio Group",
+      "section": "Components",
+      "page": "27536:9708",
+      "main": "26951:24480",
+      "preview": "26951-24480.webp",
+      "variants": 24,
+      "sets": [
+        {
+          "name": "Radio Group",
+          "node": "26951:24480",
+          "variants": 24,
+          "axes": [
+            {
+              "name": "Size",
+              "values": 6
+            },
+            {
+              "name": "Direction",
+              "values": 2
+            },
+            {
+              "name": "Disabled",
+              "values": 2
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "toggle-switch-group",
+      "name": "Toggle Switch Group",
+      "section": "Components",
+      "page": "27536:9710",
+      "main": "26953:9633",
+      "preview": "26953-9633.webp",
+      "variants": 24,
+      "sets": [
+        {
+          "name": "Toggle Switch Group",
+          "node": "26953:9633",
+          "variants": 24,
+          "axes": [
+            {
+              "name": "Size",
+              "values": 6
+            },
+            {
+              "name": "Direction",
+              "values": 2
+            },
+            {
+              "name": "Disabled",
+              "values": 2
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "toggle-card-group",
+      "name": "Toggle Card Group",
+      "section": "Components",
+      "page": "33054:1143",
+      "main": "33054:1285",
+      "preview": "33054-1285.webp",
+      "variants": 23,
+      "sets": [
+        {
+          "name": "Toggle Card Group",
+          "node": "33054:1285",
+          "variants": 2,
+          "axes": [
+            {
+              "name": "Direction",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Toggle Card",
+          "node": "33054:1144",
+          "variants": 21,
+          "axes": [
+            {
+              "name": "State",
+              "values": 4
+            },
+            {
+              "name": "Error",
+              "values": 2
+            },
+            {
+              "name": "Description",
+              "values": 2
+            },
+            {
+              "name": "Custom",
+              "values": 2
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "textarea",
+      "name": "Textarea",
+      "section": "Components",
+      "page": "26683:52073",
+      "main": "26683:52911",
+      "preview": "26683-52911.webp",
+      "variants": 84,
+      "sets": [
+        {
+          "name": "Textarea input field",
+          "node": "26683:52911",
+          "variants": 84,
+          "axes": [
+            {
+              "name": "Type",
+              "values": 2
+            },
+            {
+              "name": "Destructive",
+              "values": 2
+            },
+            {
+              "name": "State",
+              "values": 4
+            },
+            {
+              "name": "Size",
+              "values": 6
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "time-picker",
+      "name": "Time Picker",
+      "section": "Components",
+      "page": "27536:31442",
+      "main": "27343:28873",
+      "preview": "27343-28873.webp",
+      "variants": 14,
+      "sets": [
+        {
+          "name": "Time Picker",
+          "node": "27343:28873",
+          "variants": 12,
+          "axes": [
+            {
+              "name": "Size",
+              "values": 6
+            },
+            {
+              "name": "Disabled",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Time Picker Menu",
+          "node": "34640:5777",
+          "variants": 2,
+          "axes": [
+            {
+              "name": "Footer Options Position",
+              "values": 2
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "breadcrumb",
+      "name": "Breadcrumb",
+      "section": "Groups",
+      "page": "43:3087",
+      "main": "27292:23492",
+      "preview": "27292-23492.webp",
+      "variants": 3,
+      "sets": [
+        {
+          "name": "Breadcrumb",
+          "node": "27292:23492",
+          "variants": 3,
+          "axes": [
+            {
+              "name": "Size",
+              "values": 3
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "date-time-range-picker",
+      "name": "Date & Time Range Picker",
+      "section": "Groups",
+      "page": "27536:32089",
+      "main": "29443:17705",
+      "preview": "29443-17705.webp",
+      "variants": 18,
+      "sets": [
+        {
+          "name": "Date Time Range Picker",
+          "node": "29443:17705",
+          "variants": 18,
+          "axes": [
+            {
+              "name": "Size",
+              "values": 6
+            },
+            {
+              "name": "Time",
+              "values": 2
+            },
+            {
+              "name": "Time Only",
+              "values": 2
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "empty-state",
+      "name": "Empty State",
+      "section": "Groups",
+      "page": "1172:31",
+      "main": "27168:7769",
+      "preview": "27168-7769.webp",
+      "variants": 75,
+      "sets": [
+        {
+          "name": "Empty State",
+          "node": "27168:7769",
+          "variants": 10,
+          "axes": [
+            {
+              "name": "Graphic",
+              "values": 2
+            },
+            {
+              "name": "Size",
+              "values": 5
+            }
+          ]
+        },
+        {
+          "name": "Illustration",
+          "node": "27168:7890",
+          "variants": 40,
+          "axes": [
+            {
+              "name": "Style",
+              "values": 4
+            },
+            {
+              "name": "Color",
+              "values": 2
+            },
+            {
+              "name": "Size",
+              "values": 5
+            }
+          ]
+        },
+        {
+          "name": "Featured icon",
+          "node": "27168:8247",
+          "variants": 25,
+          "axes": [
+            {
+              "name": "Icon",
+              "values": 5
+            },
+            {
+              "name": "Size",
+              "values": 5
+            }
+          ]
+        }
+      ],
+      "built": [
+        "HrEmptyState"
+      ]
+    },
+    {
+      "slug": "pagination",
+      "name": "Pagination",
+      "section": "Groups",
+      "page": "225:7288",
+      "main": "27457:34219",
+      "preview": "27457-34219.webp",
+      "variants": 2,
+      "sets": [
+        {
+          "name": "Pagination",
+          "node": "27457:34219",
+          "variants": 2,
+          "axes": [
+            {
+              "name": "size",
+              "values": 2
+            }
+          ]
+        }
+      ],
+      "built": [
+        "HrPagination"
+      ]
+    },
+    {
+      "slug": "switch-sub-account-menu",
+      "name": "Switch Sub-account Menu",
+      "section": "Groups",
+      "page": "27339:289771",
+      "main": null,
+      "preview": null,
+      "variants": 0,
+      "sets": [],
+      "built": []
+    },
+    {
+      "slug": "tabs",
+      "name": "Tabs",
+      "section": "Groups",
+      "page": "43:0",
+      "main": "26957:47015",
+      "preview": "26957-47015.webp",
+      "variants": 1640,
+      "sets": [
+        {
+          "name": "Tabs",
+          "node": "26957:47015",
+          "variants": 200,
+          "axes": [
+            {
+              "name": "Placement",
+              "values": 5
+            },
+            {
+              "name": "Type",
+              "values": 3
+            },
+            {
+              "name": "Size",
+              "values": 5
+            },
+            {
+              "name": "Icon Only",
+              "values": 2
+            },
+            {
+              "name": "Theme",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Tab Item",
+          "node": "26957:20865",
+          "variants": 1440,
+          "axes": [
+            {
+              "name": "State",
+              "values": 3
+            },
+            {
+              "name": "Type",
+              "values": 2
+            },
+            {
+              "name": "Placement",
+              "values": 5
+            },
+            {
+              "name": "Disabled",
+              "values": 2
+            },
+            {
+              "name": "Size",
+              "values": 5
+            },
+            {
+              "name": "Icon Only",
+              "values": 2
+            },
+            {
+              "name": "Theme",
+              "values": 2
+            },
+            {
+              "name": "Icon",
+              "values": 2
+            },
+            {
+              "name": "Badge/Count",
+              "values": 2
+            }
+          ]
+        }
+      ],
+      "built": [
+        "HrTabs"
+      ]
+    },
+    {
+      "slug": "bottom-navigation-bar",
+      "name": "Bottom Navigation Bar",
+      "section": "Groups",
+      "page": "30687:114931",
+      "main": "30687:120801",
+      "preview": "30687-120801.webp",
+      "variants": 70,
+      "sets": [
+        {
+          "name": "Bottom Navigation Bar",
+          "node": "30687:120801",
+          "variants": 56,
+          "axes": [
+            {
+              "name": "Menu Item Count",
+              "values": 4
+            },
+            {
+              "name": "Menu Item Label",
+              "values": 2
+            },
+            {
+              "name": "Selection Style",
+              "values": 7
+            }
+          ]
+        },
+        {
+          "name": "Bottom Navigation Bar Item",
+          "node": "30687:120737",
+          "variants": 14,
+          "axes": [
+            {
+              "name": "Selected",
+              "values": 2
+            },
+            {
+              "name": "Border",
+              "values": 3
+            },
+            {
+              "name": "Selection Type",
+              "values": 3
+            },
+            {
+              "name": "Badge",
+              "values": 2
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "mobile-navigation-bar",
+      "name": "Mobile Navigation Bar",
+      "section": "Groups",
+      "page": "31010:481971",
+      "main": "31010:491978",
+      "preview": "31010-491978.webp",
+      "variants": 9,
+      "sets": [
+        {
+          "name": "Mobile Navigation Bar",
+          "node": "31010:491978",
+          "variants": 9,
+          "axes": [
+            {
+              "name": "Size",
+              "values": 2
+            },
+            {
+              "name": "Action Type",
+              "values": 6
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "skeletal-loader",
+      "name": "Skeletal Loader",
+      "section": "Groups",
+      "page": "27786:26124",
+      "main": "27786:26135",
+      "preview": "27786-26135.webp",
+      "variants": 8,
+      "sets": [
+        {
+          "name": "Skeleton Loader",
+          "node": "27786:26135",
+          "variants": 8,
+          "axes": [
+            {
+              "name": "Animation Stage",
+              "values": 2
+            },
+            {
+              "name": "Type",
+              "values": 4
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "banner",
+      "name": "Banner",
+      "section": "Groups",
+      "page": "28039:45127",
+      "main": "28064:69303",
+      "preview": "28064-69303.webp",
+      "variants": 6,
+      "sets": [
+        {
+          "name": "Banner",
+          "node": "28064:69303",
+          "variants": 6,
+          "axes": [
+            {
+              "name": "Color",
+              "values": 6
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "carousel",
+      "name": "Carousel",
+      "section": "Groups",
+      "page": "26967:12346",
+      "main": "28064:72783",
+      "preview": "28064-72783.webp",
+      "variants": 48,
+      "sets": [
+        {
+          "name": "Carousel",
+          "node": "28064:72783",
+          "variants": 48,
+          "axes": [
+            {
+              "name": "Arrow Position",
+              "values": 9
+            },
+            {
+              "name": "Dot Position",
+              "values": 4
+            },
+            {
+              "name": "Size",
+              "values": 3
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "code-editor",
+      "name": "Code Editor",
+      "section": "Groups",
+      "page": "28064:73908",
+      "main": "28064:82559",
+      "preview": "28064-82559.webp",
+      "variants": 54,
+      "sets": [
+        {
+          "name": "Code Editor",
+          "node": "28064:82559",
+          "variants": 12,
+          "axes": [
+            {
+              "name": "Disabled",
+              "values": 2
+            },
+            {
+              "name": "Size",
+              "values": 6
+            }
+          ]
+        },
+        {
+          "name": "Expand-Collapse",
+          "node": "28064:82412",
+          "variants": 12,
+          "axes": [
+            {
+              "name": "Collapse",
+              "values": 2
+            },
+            {
+              "name": "Size",
+              "values": 6
+            }
+          ]
+        },
+        {
+          "name": "Line Numbering",
+          "node": "28064:82437",
+          "variants": 6,
+          "axes": [
+            {
+              "name": "Size",
+              "values": 6
+            }
+          ]
+        },
+        {
+          "name": "State",
+          "node": "28064:82462",
+          "variants": 24,
+          "axes": [
+            {
+              "name": "State",
+              "values": 4
+            },
+            {
+              "name": "Size",
+              "values": 6
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "crud",
+      "name": "CRUD",
+      "section": "Medium Groups",
+      "page": "28462:15412",
+      "main": "28462:43675",
+      "preview": "28462-43675.webp",
+      "variants": 36,
+      "sets": [
+        {
+          "name": "CRUD",
+          "node": "28462:43675",
+          "variants": 4,
+          "axes": [
+            {
+              "name": "Item(s) Selected",
+              "values": 2
+            },
+            {
+              "name": "Size",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Filter",
+          "node": "28462:43694",
+          "variants": 6,
+          "axes": [
+            {
+              "name": "Size",
+              "values": 2
+            },
+            {
+              "name": "Filters",
+              "values": 2
+            },
+            {
+              "name": "Content Switcher",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Action",
+          "node": "28462:43713",
+          "variants": 8,
+          "axes": [
+            {
+              "name": "Size",
+              "values": 8
+            },
+            {
+              "name": "Layout Switch",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Bulk Actions",
+          "node": "28462:43754",
+          "variants": 2,
+          "axes": [
+            {
+              "name": "Size",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Layout Manager",
+          "node": "28462:43777",
+          "variants": 4,
+          "axes": [
+            {
+              "name": "Size",
+              "values": 4
+            }
+          ]
+        },
+        {
+          "name": "Layout Manager Expanded",
+          "node": "28462:43814",
+          "variants": 12,
+          "axes": [
+            {
+              "name": "Size",
+              "values": 4
+            },
+            {
+              "name": "Type",
+              "values": 3
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "input-form",
+      "name": "Input Form",
+      "section": "Medium Groups",
+      "page": "28462:80893",
+      "main": "28462:81254",
+      "preview": "28462-81254.webp",
+      "variants": 18,
+      "sets": [
+        {
+          "name": "Input Form",
+          "node": "28462:81254",
+          "variants": 18,
+          "axes": [
+            {
+              "name": "Size",
+              "values": 6
+            },
+            {
+              "name": "Disabled",
+              "values": 1
+            },
+            {
+              "name": "Error",
+              "values": 1
+            },
+            {
+              "name": "Label Type",
+              "values": 3
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "header-lite",
+      "name": "Header Lite",
+      "section": "Large Groups",
+      "page": "28462:85133",
+      "main": "28462:116331",
+      "preview": "28462-116331.webp",
+      "variants": 6,
+      "sets": [
+        {
+          "name": "Header Lite",
+          "node": "28462:116331",
+          "variants": 6,
+          "axes": [
+            {
+              "name": "Size",
+              "values": 3
+            },
+            {
+              "name": "Actions and Inputs",
+              "values": 2
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "header",
+      "name": "Header",
+      "section": "Large Groups",
+      "page": "28467:1239",
+      "main": "28469:25688",
+      "preview": "28469-25688.webp",
+      "variants": 56,
+      "sets": [
+        {
+          "name": "Header",
+          "node": "28469:25688",
+          "variants": 48,
+          "axes": [
+            {
+              "name": "Size",
+              "values": 2
+            },
+            {
+              "name": "Alignment",
+              "values": 2
+            },
+            {
+              "name": "Dropdown",
+              "values": 2
+            },
+            {
+              "name": "Bottom Border",
+              "values": 2
+            },
+            {
+              "name": "Tabs End Action",
+              "values": 2
+            },
+            {
+              "name": "Breadcrumbs",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Search",
+          "node": "28469:26667",
+          "variants": 4,
+          "axes": [
+            {
+              "name": "Width",
+              "values": 4
+            }
+          ]
+        },
+        {
+          "name": "Header Image",
+          "node": "28469:26676",
+          "variants": 4,
+          "axes": [
+            {
+              "name": "Match Icon Size",
+              "values": 2
+            },
+            {
+              "name": "Size",
+              "values": 2
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "footer",
+      "name": "Footer",
+      "section": "Large Groups",
+      "page": "28467:1240",
+      "main": "28467:1268",
+      "preview": "28467-1268.webp",
+      "variants": 3,
+      "sets": [
+        {
+          "name": "Section Footer",
+          "node": "28467:1268",
+          "variants": 3,
+          "axes": [
+            {
+              "name": "Size",
+              "values": 3
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "color-picker",
+      "name": "Color Picker",
+      "section": "Super Groups",
+      "page": "28470:24565",
+      "main": "28470:33632",
+      "preview": "28470-33632.webp",
+      "variants": 91,
+      "sets": [
+        {
+          "name": "Color Picker Menu",
+          "node": "28470:33632",
+          "variants": 2,
+          "axes": [
+            {
+              "name": "Type",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Color Swatch",
+          "node": "28470:33388",
+          "variants": 72,
+          "axes": [
+            {
+              "name": "Shape",
+              "values": 3
+            },
+            {
+              "name": "Size",
+              "values": 6
+            },
+            {
+              "name": "State",
+              "values": 4
+            }
+          ]
+        },
+        {
+          "name": "Color Swatch with Label",
+          "node": "28470:33650",
+          "variants": 2,
+          "axes": [
+            {
+              "name": "Empty",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Color Selector",
+          "node": "28470:33664",
+          "variants": 2,
+          "axes": [
+            {
+              "name": "Type",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Color Code",
+          "node": "28470:33690",
+          "variants": 5,
+          "axes": [
+            {
+              "name": "Type",
+              "values": 5
+            }
+          ]
+        },
+        {
+          "name": "Color Format",
+          "node": "28470:33709",
+          "variants": 5,
+          "axes": [
+            {
+              "name": "Format",
+              "values": 5
+            }
+          ]
+        },
+        {
+          "name": "All Colors",
+          "node": "28719:65984",
+          "variants": 3,
+          "axes": [
+            {
+              "name": "Type",
+              "values": 3
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "accordion",
+      "name": "Accordion",
+      "section": "Super Groups",
+      "page": "28470:49798",
+      "main": "28471:9317",
+      "preview": "28471-9317.webp",
+      "variants": 87,
+      "sets": [
+        {
+          "name": "Accordion",
+          "node": "28471:9317",
+          "variants": 39,
+          "axes": [
+            {
+              "name": "Type",
+              "values": 3
+            },
+            {
+              "name": "Border Position",
+              "values": 2
+            },
+            {
+              "name": "Size",
+              "values": 3
+            },
+            {
+              "name": "Border",
+              "values": 2
+            },
+            {
+              "name": "Padding",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Accordion Item",
+          "node": "28471:9103",
+          "variants": 42,
+          "axes": [
+            {
+              "name": "Size",
+              "values": 3
+            },
+            {
+              "name": "Expanded",
+              "values": 2
+            },
+            {
+              "name": "Striped",
+              "values": 2
+            },
+            {
+              "name": "State",
+              "values": 4
+            }
+          ]
+        },
+        {
+          "name": "Accordion Header",
+          "node": "28471:9284",
+          "variants": 6,
+          "axes": [
+            {
+              "name": "Size",
+              "values": 3
+            },
+            {
+              "name": "Disabled",
+              "values": 2
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "table",
+      "name": "Table",
+      "section": "Super Groups",
+      "page": "28471:86097",
+      "main": "28471:129338",
+      "preview": "28471-129338.webp",
+      "variants": 351,
+      "sets": [
+        {
+          "name": "Table",
+          "node": "28471:129338",
+          "variants": 6,
+          "axes": [
+            {
+              "name": "Empty",
+              "values": 2
+            },
+            {
+              "name": "Error",
+              "values": 2
+            },
+            {
+              "name": "Breadcrumb Pagination Position",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Cell",
+          "node": "28471:129537",
+          "variants": 326,
+          "axes": [
+            {
+              "name": "Scenario",
+              "values": 5
+            },
+            {
+              "name": "Border",
+              "values": 4
+            },
+            {
+              "name": "Type",
+              "values": 2
+            },
+            {
+              "name": "State",
+              "values": 4
+            },
+            {
+              "name": "Striped",
+              "values": 2
+            },
+            {
+              "name": "Expandable",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Row Content",
+          "node": "28471:131709",
+          "variants": 11,
+          "axes": [
+            {
+              "name": "Type",
+              "values": 2
+            },
+            {
+              "name": "State",
+              "values": 4
+            },
+            {
+              "name": "Striped",
+              "values": 2
+            },
+            {
+              "name": "Expanded",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Column Configurator",
+          "node": "28471:131900",
+          "variants": 3,
+          "axes": [
+            {
+              "name": "State",
+              "values": 3
+            }
+          ]
+        },
+        {
+          "name": "Sort & Filter Menu",
+          "node": "28606:203376",
+          "variants": 2,
+          "axes": [
+            {
+              "name": "Type",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Advanced Filters",
+          "node": "35190:620612",
+          "variants": 3,
+          "axes": [
+            {
+              "name": "Property 1",
+              "values": 3
+            }
+          ]
+        }
+      ],
+      "built": [
+        "HrTable"
+      ]
+    },
+    {
+      "slug": "modal",
+      "name": "Modal",
+      "section": "Super Groups",
+      "page": "28471:86098",
+      "main": "28471:118828",
+      "preview": "28471-118828.webp",
+      "variants": 14,
+      "sets": [
+        {
+          "name": "Modal",
+          "node": "28471:118828",
+          "variants": 14,
+          "axes": [
+            {
+              "name": "Type",
+              "values": 8
+            },
+            {
+              "name": "Device",
+              "values": 3
+            }
+          ]
+        }
+      ],
+      "built": [
+        "HrModal"
+      ]
+    },
+    {
+      "slug": "primary-navigation-toolbar",
+      "name": "Primary Navigation Toolbar",
+      "section": "Super Groups",
+      "page": "28471:86099",
+      "main": "28471:118377",
+      "preview": "28471-118377.webp",
+      "variants": 5,
+      "sets": [
+        {
+          "name": "Primary Navigation Toolbar",
+          "node": "28471:118377",
+          "variants": 3,
+          "axes": [
+            {
+              "name": "Type",
+              "values": 2
+            },
+            {
+              "name": "Collapse",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Chips",
+          "node": "28471:118521",
+          "variants": 2,
+          "axes": [
+            {
+              "name": "Type",
+              "values": 2
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "side-panel",
+      "name": "Side Panel",
+      "section": "Super Groups",
+      "page": "28471:86100",
+      "main": "28471:97971",
+      "preview": "28471-97971.webp",
+      "variants": 5,
+      "sets": [
+        {
+          "name": "Side Panel",
+          "node": "28471:97971",
+          "variants": 5,
+          "axes": [
+            {
+              "name": "Overlay",
+              "values": 2
+            },
+            {
+              "name": "Tab Position",
+              "values": 2
+            },
+            {
+              "name": "Type",
+              "values": 2
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "menu",
+      "name": "Menu",
+      "section": "Super Groups",
+      "page": "28310:3715",
+      "main": "34771:79640",
+      "preview": "34771-79640.webp",
+      "variants": 25,
+      "sets": [
+        {
+          "name": "Menu",
+          "node": "34771:79640",
+          "variants": 2,
+          "axes": [
+            {
+              "name": "Type",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Multi Level Menu Item",
+          "node": "28323:2172",
+          "variants": 20,
+          "axes": [
+            {
+              "name": "State",
+              "values": 2
+            },
+            {
+              "name": "Active",
+              "values": 2
+            },
+            {
+              "name": "Level",
+              "values": 3
+            },
+            {
+              "name": "Disabled",
+              "values": 2
+            },
+            {
+              "name": "Collapsed",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Menu Items",
+          "node": "28324:4320",
+          "variants": 3,
+          "axes": [
+            {
+              "name": "Type",
+              "values": 3
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "drag",
+      "name": "Drag",
+      "section": "Super Groups",
+      "page": "28035:43126",
+      "main": "29573:476",
+      "preview": "29573-476.webp",
+      "variants": 20,
+      "sets": [
+        {
+          "name": "Drag",
+          "node": "29573:476",
+          "variants": 20,
+          "axes": [
+            {
+              "name": "State",
+              "values": 5
+            },
+            {
+              "name": "Position",
+              "values": 4
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "builder-space",
+      "name": "Builder Space",
+      "section": "Super Groups",
+      "page": "30512:10232",
+      "main": null,
+      "preview": null,
+      "variants": 0,
+      "sets": [],
+      "built": []
+    },
+    {
+      "slug": "icon-emoji-media-picker",
+      "name": "Icon Emoji Media Picker",
+      "section": "Super Groups",
+      "page": "30512:10236",
+      "main": "30681:72136",
+      "preview": "30681-72136.webp",
+      "variants": 9,
+      "sets": [
+        {
+          "name": "Icon Emoji GIF Picker",
+          "node": "30681:72136",
+          "variants": 3,
+          "axes": [
+            {
+              "name": "Type",
+              "values": 3
+            }
+          ]
+        },
+        {
+          "name": "Icon Emoji GIF Picker Swatch",
+          "node": "30681:68866",
+          "variants": 3,
+          "axes": [
+            {
+              "name": "Type",
+              "values": 3
+            }
+          ]
+        },
+        {
+          "name": "IconPicker Modal",
+          "node": "32646:2529",
+          "variants": 3,
+          "axes": [
+            {
+              "name": "Stage",
+              "values": 2
+            },
+            {
+              "name": "Multiple",
+              "values": 2
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "statistic",
+      "name": "Statistic",
+      "section": "Super Groups",
+      "page": "30512:10237",
+      "main": "30785:9165",
+      "preview": "30785-9165.webp",
+      "variants": 8,
+      "sets": [
+        {
+          "name": "Statistic",
+          "node": "30785:9165",
+          "variants": 6,
+          "axes": [
+            {
+              "name": "State",
+              "values": 3
+            },
+            {
+              "name": "Graph",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Trend",
+          "node": "30939:351",
+          "variants": 2,
+          "axes": [
+            {
+              "name": "Up",
+              "values": 2
+            }
+          ]
+        }
+      ],
+      "built": [
+        "HrStat"
+      ]
+    },
+    {
+      "slug": "tile",
+      "name": "Tile",
+      "section": "Super Groups",
+      "page": "30512:10238",
+      "main": "31641:27645",
+      "preview": "31641-27645.webp",
+      "variants": 12,
+      "sets": [
+        {
+          "name": "Tile",
+          "node": "31641:27645",
+          "variants": 12,
+          "axes": [
+            {
+              "name": "State",
+              "values": 4
+            },
+            {
+              "name": "Custom",
+              "values": 2
+            },
+            {
+              "name": "Icon Only",
+              "values": 2
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "rich-text-editor",
+      "name": "Rich Text Editor",
+      "section": "Backlog",
+      "page": "28034:43074",
+      "main": "31906:144342",
+      "preview": "31906-144342.webp",
+      "variants": 300,
+      "sets": [
+        {
+          "name": "Rich Text Editor",
+          "node": "31906:144342",
+          "variants": 294,
+          "axes": [
+            {
+              "name": "Expandable",
+              "values": 2
+            },
+            {
+              "name": "Type",
+              "values": 5
+            },
+            {
+              "name": "State",
+              "values": 4
+            },
+            {
+              "name": "Size",
+              "values": 6
+            },
+            {
+              "name": "Destructive",
+              "values": 2
+            },
+            {
+              "name": "Floating toolbar",
+              "values": 2
+            }
+          ]
+        },
+        {
+          "name": "Formatting actions",
+          "node": "31906:144070",
+          "variants": 6,
+          "axes": [
+            {
+              "name": "Size",
+              "values": 6
+            }
+          ]
+        }
+      ],
+      "built": []
+    },
+    {
+      "slug": "sort-and-filter",
+      "name": "Sort and Filter",
+      "section": "Backlog",
+      "page": "30456:7425",
+      "main": null,
+      "preview": null,
+      "variants": 0,
+      "sets": [],
+      "built": []
+    },
+    {
+      "slug": "toolbar",
+      "name": "Toolbar",
+      "section": "Backlog",
+      "page": "31644:7199",
+      "main": null,
+      "preview": null,
+      "variants": 0,
+      "sets": [],
+      "built": []
+    },
+    {
+      "slug": "card-backlog",
+      "name": "Card (backlog)",
+      "section": "Backlog",
+      "page": "28034:39237",
+      "main": null,
+      "preview": null,
+      "variants": 0,
+      "sets": [],
+      "built": [
+        "HrCard"
+      ]
+    },
+    {
+      "slug": "forms",
+      "name": "Forms",
+      "section": "Backlog",
+      "page": "28034:39140",
+      "main": null,
+      "preview": null,
+      "variants": 0,
+      "sets": [],
+      "built": []
+    },
+    {
+      "slug": "advanced-color-picker",
+      "name": "Advanced color Picker",
+      "section": "Backlog",
+      "page": "28261:269",
+      "main": null,
+      "preview": null,
+      "variants": 0,
+      "sets": [],
+      "built": []
+    },
+    {
+      "slug": "input-stepper",
+      "name": "Input Stepper",
+      "section": "Backlog",
+      "page": "28114:44462",
+      "main": null,
+      "preview": null,
+      "variants": 0,
+      "sets": [],
+      "built": []
+    },
+    {
+      "slug": "summary-grid",
+      "name": "Summary Grid",
+      "section": "Backlog",
+      "page": "28038:45108",
+      "main": null,
+      "preview": null,
+      "variants": 0,
+      "sets": [],
+      "built": []
+    },
+    {
+      "slug": "key-value-pair",
+      "name": "Key Value Pair",
+      "section": "Backlog",
+      "page": "28041:45141",
+      "main": null,
+      "preview": null,
+      "variants": 0,
+      "sets": [],
+      "built": []
+    },
+    {
+      "slug": "command-menu",
+      "name": "Command menu",
+      "section": "Backlog",
+      "page": "3307:403757",
+      "main": null,
+      "preview": null,
+      "variants": 0,
+      "sets": [],
+      "built": []
+    },
+    {
+      "slug": "notifications",
+      "name": "Notifications",
+      "section": "Backlog",
+      "page": "176:4256",
+      "main": null,
+      "preview": null,
+      "variants": 0,
+      "sets": [],
+      "built": []
+    }
+  ]
+}

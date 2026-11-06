@@ -14,6 +14,7 @@ import ComponentPage from './library/ComponentPage.vue';
 import TokensPage from './library/TokensPage.vue';
 import AuditPage from './library/AuditPage.vue';
 import HandoffPage from './library/HandoffPage.vue';
+import FigmaPage from './library/FigmaPage.vue';
 
 const view = computed(() => {
   const r = route.value;
@@ -22,6 +23,7 @@ const view = computed(() => {
   if (r === '/tokens') return { c: TokensPage };
   if (r === '/audit') return { c: AuditPage };
   if ((m = r.match(/^\/c\/([\w-]+)$/))) return { c: ComponentPage, props: { id: m[1] }, key: m[1] };
+  if ((m = r.match(/^\/f\/([\w-]+)$/))) return { c: FigmaPage, props: { id: m[1] }, key: m[1] };
   if ((m = r.match(/^\/handoff\/([\w-]+)$/))) return { c: HandoffPage, props: { id: m[1] }, key: m[1] };
   if (r === '/spec/button') return { c: ButtonSpec };
   if (r === '/spec/elements') return { c: ElementsSpec };

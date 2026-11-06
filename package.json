@@ -6,12 +6,13 @@
   "description": "HighRise component library and playground, generated from the HighRise 1.1 Figma file.",
   "scripts": {
     "tokens": "node scripts/build-tokens.mjs",
-    "gen": "node scripts/build-tokens.mjs && node scripts/build-button.mjs && node scripts/handoff.mjs",
+    "gen": "node scripts/build-tokens.mjs && node scripts/build-button.mjs && node scripts/build-inventory.mjs && node scripts/handoff.mjs",
     "dev": "npm run gen && vite",
     "build": "npm run gen && npm run check && vite build",
     "audit": "node scripts/audit.mjs",
     "check": "node scripts/check-prototypes.mjs",
     "handoff": "node scripts/handoff.mjs",
+    "inventory": "node scripts/build-inventory.mjs",
     "mcp": "node mcp/server.mjs",
     "build:artifact": "npm run gen && npm run check && vite build -c vite.artifact.config.ts && node scripts/artifact.mjs"
   },

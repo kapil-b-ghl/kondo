@@ -44,6 +44,18 @@ server.tool('list_components', 'List every HighRise component with its tag, grou
   return text(r.components.map((c) => `${c.tag} — ${c.name} [${c.group}] · ${c.status}${c.figmaNode ? ` · Figma ${c.figmaNode}` : ''}\n  ${c.coverage}`).join('\n'));
 });
 
+server.tool('list_figma_components', 'List every component in the HighRise 1.1 Figma file (grouped like the file) and whether it is built in code yet. Use it to tell what exists in Figma but is not available to prototypes.', {}, async () => {
+  const f = JSON.parse(read('registry/figma-inventory.json'));
+  const lines = [`${f.coverage.inCode} of ${f.coverage.figmaComponents} published Figma components are in code.`];
+  for (const sec of f.sections) {
+    const es = f.entries.filter((e) => e.section === sec);
+    if (!es.length) continue;
+    lines.push(`\n## ${sec}`);
+    for (const e of es) lines.push(`- ${e.name}: ${e.built.length ? `in code as ${e.built.join(', ')}` : e.sets.length ? 'NOT BUILT' : 'nothing published in Figma'}${e.main ? ` · Figma ${e.main} · ${e.variants} variants` : ''}`);
+  }
+  return text(lines.join('\n'));
+});
+
 server.tool('get_component', 'Get a HighRise component\'s full source (and the files it depends on), its Figma node and the open audit gaps.', { name: z.string().describe('Tag or name, e.g. "HrButton" or "Select"') }, async ({ name }) => {
   const c = findComponent(name);
   if (!c) return text(`No component called "${name}". Call list_components to see what exists.`);

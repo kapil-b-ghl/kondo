@@ -15,6 +15,7 @@ npm run dev          # http://localhost:5173
 | --- | --- |
 | Library home | `#/` |
 | A component (live examples + Figma audit) | `#/c/button`, `#/c/select`, … |
+| A Figma component not built yet (preview, variants, Figma link) | `#/f/date-picker`, … |
 | Tokens | `#/tokens` |
 | Every open question for Figma | `#/audit` |
 | Playground | `#/playground` |
@@ -30,6 +31,7 @@ npm run dev          # http://localhost:5173
 | `npm run gen` | Regenerates token CSS, Button styles and handoff files from their sources. |
 | `npm run check` | Guardrails: prototypes use only registry components and semantic tokens. |
 | `npm run build` | `gen` + `check` + production build. |
+| `npm run inventory` | Joins the full Figma inventory (`specs/figma-inventory.raw.json`) with the registry → `registry/figma-inventory.json` (coverage: what's in Figma vs in code). |
 | `npm run handoff` | Writes `handoff/<id>.md` for every prototype marked `ready-for-dev`. |
 | `npm run build:artifact` | One self-contained HTML file for sharing (`dist-artifact/`). |
 | `npm run mcp` | Starts the HighRise MCP server (see below). |
@@ -43,7 +45,7 @@ pull real components, tokens and rules into whatever folder you're working in:
 claude mcp add highrise -- npx -y github:kapil-b-ghl/kondo
 ```
 
-Tools: `list_components`, `get_component` (source + dependencies + Figma node + audit gaps),
+Tools: `list_components`, `list_figma_components` (everything in Figma and whether it's built), `get_component` (source + dependencies + Figma node + audit gaps),
 `get_tokens`, `get_rules`, `list_prototypes`, `get_handoff`.
 
 ## How it fits together
