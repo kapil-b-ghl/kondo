@@ -1,13 +1,12 @@
 /* ==========================================================================
-   HighRise semantic tokens — names from "HighRise 1.2 Foundations"
-   (collection Semantic-Colors). Use these in components and prototypes.
-   Never use primitives (--hr-color-*) directly outside this file.
-
-   STATUS: names verified against the 1.2 Foundations library.
-           VALUES UNVERIFIED — each is mapped to the 1.1 primitive that
-           HighRise 1.1 components use for that role. Replace with the real
-           1.2 values once the Foundations file is shared. Tracked in
-           registry/tokens.audit.json.
+   HighRise semantic tokens — derived from HighRise 1.1.
+   HighRise 1.1 has primitives and component-specific tokens but no semantic
+   layer, so this file defines one: each role points at the 1.1 primitive that
+   1.1 components already use for it (e.g. input borders → gray/300).
+   Naming follows the surface / text / background / border / icon pattern.
+   Use these in components and prototypes. Never use primitives
+   (--hr-color-*) directly outside component spec code.
+   STATUS: derived from 1.1 usage — reviewed by design, not yet in Figma.
    ========================================================================== */
 :root {
   /* surface */

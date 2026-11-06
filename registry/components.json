@@ -82,8 +82,8 @@
     }
   ],
   "tokens": {
-    "primitives": { "status": "matches", "source": "HighRise 1.1 local collection 'primitive' (800 variables)", "note": "Same values as the 1.2 Foundations Primitive collection (spot-checked by description)." },
-    "semantic": { "status": "unverified", "source": "Names from HighRise 1.2 Foundations · Semantic-Colors", "note": "Values are mapped to the 1.1 primitive each role uses in 1.1 components. Replace with the real values once the 1.2 Foundations file is shared." },
+    "primitives": { "status": "matches", "source": "HighRise 1.1 local collection 'primitive' (800 variables)", "note": "Exact values from Figma." },
+    "semantic": { "status": "derived-from-1.1", "source": "HighRise 1.1 has no semantic layer. Each semantic role is mapped to the 1.1 primitive that 1.1 components use for it.", "note": "Proposal: add these as a Semantic collection in the 1.1 Figma file so design and code share the same names." },
     "icons": { "status": "stand-in", "note": "HighRise uses Untitled UI icons. Code uses Lucide icons with matching stroke weight until the icon set is exported." }
   }
 }
