@@ -1,0 +1,22 @@
+// The HighRise component registry for code. Prototypes import ONLY from here.
+// Keep in sync with registry/components.json (scripts/check-registry.mjs enforces it).
+export { default as HrAlert } from './alert/HrAlert.vue';
+export { default as HrAppShell } from './app-shell/HrAppShell.vue';
+export { default as HrButton } from './button/HrButton.vue';
+export { default as HrCard } from './card/HrCard.vue';
+export { default as HrCheckbox } from './checkbox/HrCheckbox.vue';
+export { default as HrDescriptionList } from './description-list/HrDescriptionList.vue';
+export { default as HrEmptyState } from './empty-state/HrEmptyState.vue';
+export { default as HrField } from './field/HrField.vue';
+export { default as HrInput } from './input/HrInput.vue';
+export { default as HrModal } from './modal/HrModal.vue';
+export { default as HrPagination } from './pagination/HrPagination.vue';
+export { default as HrRadio } from './radio/HrRadio.vue';
+export { default as HrSelect } from './select/HrSelect.vue';
+export { default as HrStat } from './stat/HrStat.vue';
+export { default as HrTable } from './table/HrTable.vue';
+export { default as HrTabs } from './tabs/HrTabs.vue';
+export { default as HrTag } from './tag/HrTag.vue';
+export { default as HrTimeline } from './timeline/HrTimeline.vue';
+export { default as HrToggle } from './toggle/HrToggle.vue';
+export { default as HrTooltip } from './tooltip/HrTooltip.vue';
