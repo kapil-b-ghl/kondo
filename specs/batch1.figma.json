@@ -1,0 +1,88 @@
+{
+  "$source": "HighRise 1.1 (emjjdhZIMlqbszmzP9PdS6), read with read-only use_figma scripts. Colours are the Figma variable names they are bound to.",
+  "textarea": {
+    "node": "26683:52911",
+    "axes": { "Type": ["Default", "Tags"], "Destructive": ["False", "True"], "State": ["Placeholder", "Disabled", "Default", "Focused"], "Size": ["lg", "md", "sm", "xs", "2xs", "3xs"] },
+    "props": ["Character Limit", "Emoji", "Resizable", "Limit=200", "Count=0", "Media"],
+    "box": { "fill": "white/base", "stroke": "gray/300 1", "effect": "Shadow/xs", "gap": 4 },
+    "sizes": {
+      "lg": { "pad": "10,14", "radius": 8, "text": "16/24", "count": "13/18" },
+      "md": { "pad": "10,12", "radius": 8, "text": "16/24", "count": "13/18" },
+      "sm": { "pad": "8,8", "radius": 6, "text": "14/20", "count": "12/17" },
+      "xs": { "pad": "6,8", "radius": 4, "text": "14/20", "count": "11/16" },
+      "2xs": { "pad": "6,6", "radius": 4, "text": "14/20", "count": "10/15" },
+      "3xs": { "pad": "6,6", "radius": 4, "text": "14/20", "count": "9/14" }
+    },
+    "text": { "value": "gray/900", "placeholder": "gray/500", "count": "gray/600" },
+    "states": { "disabled": "fill gray/50", "focused": "stroke blue/300 + Focus ring/4px primary-100 (lg: Shadow/xs focused 4px primary-100)", "destructive": "stroke error/300; focused + Focus ring/4px error-100" }
+  },
+  "dropdown": {
+    "node": "28430:223073",
+    "menu": { "fill": "white/base", "stroke": "gray/300 1", "radius": 4, "effect": "Shadow/md", "pad": "4,0", "gap": 2, "width": 182 },
+    "item": {
+      "node": "26683:55162", "pad": "4,8", "gap": 8, "height": 26,
+      "label": "13/18 Regular gray/700", "description": "11/16 Regular gray/600", "icon": "14 gray/600", "check": "blue/700 2px",
+      "hover": "fill gray/100", "selected": "fill blue/50 + check", "disabled": "fill gray/50, text gray/400, icon gray/300",
+      "multiSelect": "Checkbox xs leading"
+    },
+    "groupTitle": { "fill": "gray/50", "pad": "8,10,4,8", "text": "11/16 Medium gray/400 uppercase" },
+    "search": { "pad": 8, "input": "Select Search 2xs (28px), gray/300 border, radius 4" },
+    "divider": "1px gray/200"
+  },
+  "datePicker": {
+    "node": "27344:49200",
+    "menu": { "width": 280, "pad": 8, "gap": 8, "radius": 8, "fill": "white/base", "stroke": "gray/100 1", "effect": "Shadow/md" },
+    "header": { "nav": "Button 2xs Ghost Neutral icon-only: «, ‹, ›, »", "title": "16/24 Semi Bold gray/800, month and year are separate hit areas (Dates cell, pad 0 4)" },
+    "weekdays": { "text": "14/20 Semi Bold gray/400", "pad": "8,0", "border": "bottom gray/100" },
+    "day": {
+      "node": "27344:47235", "size": 24, "radius": 4, "gapX": 16, "text": "13/18 Medium gray/600",
+      "outside": "gray/300", "hover": "fill gray/100, text gray/900", "selected": "fill blue/50, stroke blue/600 1, text blue/900 Semi Bold",
+      "selectedHover": "fill blue/900, text white", "today": "4px dot blue/600 (blue/900 when selected)",
+      "range": "fill blue/50, square; the 16px gap between days also fills blue/50", "rangeHover": "fill blue/100",
+      "rangeStart": "radius 4,0,0,4", "rangeEnd": "radius 0,4,4,0"
+    },
+    "footer": { "presets": "Button 3xs Secondary Neutral (Yesterday, Last 2 weeks, Next week, Tomorrow)", "actions": "Button 2xs Secondary Neutral Cancel + Primary Confirm, full width halves" }
+  },
+  "progressSteps": {
+    "node": "27043:7342",
+    "step": { "node": "26956:11571", "states": ["Completed", "Current", "Next", "Loading", "Error", "Warning"], "directions": ["Horizontal", "Vertical"], "gap": 4 },
+    "icon": {
+      "node": "26955:8706", "size": 28, "radius": 14,
+      "completed": "fill blue/50, stroke blue/600, tick blue/600", "current": "fill blue/600, stroke blue/600, number 15/20 Semi Bold white",
+      "next": "fill white, stroke gray/300, number gray/400", "loading": "Loader line spinner sm (blue/50 track, blue/600 line)",
+      "error": "fill error/100, stroke error/300, info icon error/600", "warning": "fill warning/100, stroke warning/300, warning icon warning/600"
+    },
+    "line": { "weight": 2, "completed": "blue/600", "current": "blue/600", "next": "gray/300", "loading": "gray/300", "error": "error/300", "warning": "warning/300" },
+    "title": { "text": "15/20 Semi Bold gray/900", "next": "gray/500" },
+    "hint": { "text": "12/17 Medium gray/500", "next": "gray/400", "error": "error/500", "warning": "warning/600" }
+  },
+  "fileUploader": {
+    "node": "26953:22868",
+    "zone": { "pad": 8, "gap": 4, "radius": 8, "fill": "white/base", "stroke": "gray/200 1 (solid)", "hover": "stroke blue/600", "disabled": "fill gray/50, link blue/200, text gray/400" },
+    "featuredIcon": { "size": 40, "fill": "gray/100", "ring": "gray/50 6px", "icon": "upload-cloud 20 gray/600" },
+    "action": { "link": "13/18 Semi Bold blue/700", "rest": "13/18 Regular gray/600" },
+    "support": "11/16 Regular gray/600",
+    "file": {
+      "node": "26953:22730", "pad": 8, "gap": 4, "radius": 8, "fill": "white/base", "stroke": "gray/200 1",
+      "icon": "32 circle; in progress blue/100 + blue/600; queued gray/100 + gray/300; complete success/100 + success/600; error error/100 + error/600",
+      "name": "13/18 Medium gray/700", "size": "12/17 Regular gray/600",
+      "progress": "8px bar radius 64, track gray/200, fill blue/600, value 13/18 Medium gray/700",
+      "queued": "Tag xs warning outline rounded", "error": "fill error/25, stroke error/300, 'Try again' link error/700",
+      "complete": "success/600 check circle + trash"
+    }
+  },
+  "banner": {
+    "node": "28064:69303",
+    "colors": { "Default": "white/base", "Primary": "blue/25", "Gray": "gray/25", "Error": "error/25", "Warning": "warning/25", "Success": "success/25" },
+    "icons": { "Default": "info gray/700", "Primary": "info blue/600", "Gray": "info gray/700", "Error": "alert-circle error/600", "Warning": "alert-triangle warning/600", "Success": "check-circle success/600" },
+    "layout": { "pad": 8, "gap": 8, "radius": 0, "border": "none" },
+    "title": "14/20 Semi Bold gray/700", "text": "13/18 Regular gray/600",
+    "actions": "Button sm Link (Neutral, Primary), gap 12", "close": "x 20 gray/600", "pagination": "‹ › 20, gray/700 (gray/300 at the ends)"
+  },
+  "skeleton": {
+    "node": "27786:26135",
+    "types": { "Block": "radius 4", "Bar": "34px tall, radius 4", "Circle": "ellipse", "Doughnut": "ring, 20px thick at 175px" },
+    "fill": "gray/200",
+    "shimmer": "linear gradient transparent → gray/500 (36%–63%) → transparent, layer opacity 0.4, blend Color Burn; 2 animation stages"
+  }
+}

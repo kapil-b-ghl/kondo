@@ -13,7 +13,7 @@
   ],
   "coverage": {
     "figmaComponents": 59,
-    "inCode": 15,
+    "inCode": 22,
     "pages": 73
   },
   "codeOnly": [
@@ -892,7 +892,9 @@
           ]
         }
       ],
-      "built": []
+      "built": [
+        "HrDatePicker"
+      ]
     },
     {
       "slug": "dropdown-menu",
@@ -942,7 +944,9 @@
           ]
         }
       ],
-      "built": []
+      "built": [
+        "HrDropdownMenu"
+      ]
     },
     {
       "slug": "file-uploader",
@@ -1014,7 +1018,9 @@
           ]
         }
       ],
-      "built": []
+      "built": [
+        "HrFileUploader"
+      ]
     },
     {
       "slug": "inline-editor",
@@ -1457,7 +1463,9 @@
           ]
         }
       ],
-      "built": []
+      "built": [
+        "HrProgressSteps"
+      ]
     },
     {
       "slug": "quick-action-menu",
@@ -1657,7 +1665,9 @@
           ]
         }
       ],
-      "built": []
+      "built": [
+        "HrTextarea"
+      ]
     },
     {
       "slug": "time-picker",
@@ -2040,7 +2050,9 @@
           ]
         }
       ],
-      "built": []
+      "built": [
+        "HrSkeleton"
+      ]
     },
     {
       "slug": "banner",
@@ -2063,7 +2075,9 @@
           ]
         }
       ],
-      "built": []
+      "built": [
+        "HrBanner"
+      ]
     },
     {
       "slug": "carousel",

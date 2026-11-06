@@ -1,11 +1,13 @@
 <script setup lang="ts">
 // Live examples for each registry component, used on the library pages.
 import { ref } from 'vue';
-import { Search, Mail, Plus } from 'lucide-vue-next';
+import { Search, Mail, Plus, MoreHorizontal, Download, RotateCcw, Copy, Trash2, ChevronDown } from 'lucide-vue-next';
 import {
   HrAlert, HrButton, HrCard, HrCheckbox, HrDescriptionList, HrEmptyState, HrInput, HrModal, HrPagination, HrRadio,
   HrSelect, HrStat, HrTable, HrTabs, HrTag, HrTimeline, HrToggle, HrTooltip,
+  HrBanner, HrDatePicker, HrDropdownMenu, HrFileUploader, HrProgressSteps, HrSkeleton, HrTextarea,
 } from '../components';
+import type { UploadFile } from '../components/file-uploader/HrFileUploader.vue';
 
 defineProps<{ tag: string }>();
 const c1 = ref(true), c2 = ref(false), r = ref('daily'), t = ref(true), v = ref(''), s = ref<string | number>('weekly'), tab = ref('all'), seg = ref('full');
@@ -16,6 +18,16 @@ const rows = [
   { id: 2, amount: '$480.00', status: 'Disputed', customer: 'Jamie Fox', date: 'Oct 30' },
   { id: 3, amount: '$39.00', status: 'Failed', customer: 'Jordan Smith', date: 'Oct 30' },
 ];
+const note = ref(''), menuPick = ref<string | number>('weekly'), channels = ref<(string | number)[]>(['link']), lastAction = ref('');
+const day = ref<string | [string, string] | undefined>('2026-11-04'), span = ref<string | [string, string] | undefined>(['2026-11-02', '2026-11-06']);
+const bannerPage = ref(1), bannerOpen = ref(true);
+const files = ref<UploadFile[]>([
+  { id: 1, name: 'Bank statement October.pdf', size: '200 KB', state: 'progress', progress: 40 },
+  { id: 2, name: 'Owner ID front.jpg', size: '1.2 MB', state: 'complete' },
+  { id: 3, name: 'Owner ID back.jpg', size: '4.8 MB', state: 'error', error: 'File is over 4 MB' },
+  { id: 4, name: 'Articles of incorporation.pdf', size: '540 KB', state: 'queued' },
+]);
+function addFiles(list: File[]) { for (const f of list) files.value.push({ id: Date.now() + f.name, name: f.name, size: `${Math.max(1, Math.round(f.size / 1024))} KB`, state: 'complete' }); }
 const tagFor = (st: string) => (st === 'Succeeded' ? 'success' : st === 'Disputed' ? 'error' : 'warning') as 'success' | 'error' | 'warning';
 </script>
 
@@ -54,6 +66,33 @@ const tagFor = (st: string) => (st === 'Succeeded' ? 'success' : st === 'Dispute
     <template v-else-if="tag === 'HrEmptyState'"><HrEmptyState title="No payments match these filters" text="Try a different status or channel, or clear the filters."><template #actions><HrButton variant="secondary" theme="neutral" size="sm">Clear filters</HrButton></template></HrEmptyState></template>
     <template v-else-if="tag === 'HrDescriptionList'"><HrDescriptionList :items="[{ label: 'Amount', value: '$100.00' }, { label: 'Fastpay fee (2.7% + 20¢)', value: '−$2.90' }, { label: 'Payment ID', value: 'pay_7Q2KX9', mono: true }, { label: 'Net to your balance', value: '$97.10', total: true }]" /></template>
     <template v-else-if="tag === 'HrTimeline'"><HrTimeline :items="[{ text: 'Payment started by Taylor Nguyen', when: 'Nov 2, 9:41 AM' }, { text: 'Authorized and captured', when: 'Nov 2, 9:41 AM', tone: 'success' }, { text: 'Added to the payout for Nov 4', when: 'Expected Nov 4', tone: 'primary' }]" /></template>
+    <template v-else-if="tag === 'HrTextarea'"><div class="grid"><HrTextarea v-model="note" label="Note to customer" placeholder="Shown on the receipt" :maxlength="200" hint="Optional" /><HrTextarea model-value="Refunded the shipping fee." label="Refund reason" error="Keep it under 20 characters" size="sm" :rows="3" /><HrTextarea model-value="Locked note" label="Disabled" disabled size="xs" :rows="2" /></div></template>
+    <template v-else-if="tag === 'HrDropdownMenu'">
+      <div class="row tall">
+        <HrDropdownMenu label="Payment actions" :items="[{ label: 'Download receipt', icon: Download }, { label: 'Copy payment ID', icon: Copy }, { type: 'divider' }, { label: 'Refund', icon: RotateCcw, description: 'Full or partial' }, { label: 'Delete draft', icon: Trash2, disabled: true }]" @select="(i) => (lastAction = i.label ?? '')">
+          <HrButton variant="secondary" theme="neutral" size="sm" icon-only aria-label="More actions"><MoreHorizontal /></HrButton>
+        </HrDropdownMenu>
+        <HrDropdownMenu v-model="menuPick" label="Payout schedule" :items="[{ type: 'group', label: 'Automatic' }, { label: 'Daily', value: 'daily' }, { label: 'Weekly', value: 'weekly', description: 'Every Monday' }, { label: 'Monthly', value: 'monthly' }, { type: 'group', label: 'Manual' }, { label: 'On request', value: 'manual' }]">
+          <HrButton variant="secondary" theme="neutral" size="sm">Schedule: {{ menuPick }} <ChevronDown :size="16" /></HrButton>
+        </HrDropdownMenu>
+        <HrDropdownMenu v-model="channels" multiple searchable search-placeholder="Search channels" label="Channels" :items="[{ label: 'Payment links', value: 'link' }, { label: 'Invoices', value: 'invoice' }, { label: 'Funnels', value: 'funnel' }, { label: 'Text to pay', value: 'sms' }, { label: 'Tap to pay', value: 'tap' }]">
+          <HrButton variant="secondary" theme="neutral" size="sm">Channels ({{ channels.length }}) <ChevronDown :size="16" /></HrButton>
+        </HrDropdownMenu>
+        <span v-if="lastAction" class="note">Chose: {{ lastAction }}</span>
+      </div>
+    </template>
+    <template v-else-if="tag === 'HrDatePicker'"><div class="grid tall"><HrDatePicker v-model="day" label="Payout date" today="2026-11-06" :presets="[{ label: 'Yesterday', value: '2026-11-05' }, { label: 'Today', value: '2026-11-06' }, { label: 'Tomorrow', value: '2026-11-07' }]" /><HrDatePicker v-model="span" range label="Payments between" today="2026-11-06" :presets="[{ label: 'Last 7 days', value: ['2026-10-31', '2026-11-06'] }, { label: 'This month', value: ['2026-11-01', '2026-11-06'] }]" /><HrDatePicker label="Disabled" disabled /></div></template>
+    <template v-else-if="tag === 'HrProgressSteps'"><div class="stack"><HrProgressSteps :current="2" :steps="[{ title: 'Business details', hint: 'Name, address, EIN' }, { title: 'Owner', hint: 'Identity check' }, { title: 'Bank account', hint: 'Where payouts go' }, { title: 'Review', hint: 'Check and submit' }]" /><HrProgressSteps direction="vertical" :steps="[{ title: 'Business details', state: 'completed' }, { title: 'Owner identity', hint: 'ID photo is blurry. Upload again.', state: 'error' }, { title: 'Bank account', hint: 'Verifying micro-deposits', state: 'loading' }, { title: 'Tax form', hint: 'Due before your first payout', state: 'warning' }, { title: 'Go live', state: 'next' }]" /></div></template>
+    <template v-else-if="tag === 'HrFileUploader'"><HrFileUploader :files="files" hint="PDF, JPG or PNG, up to 4 MB" @add="addFiles" @remove="(id) => (files = files.filter((f) => f.id !== id))" @retry="(id) => (files = files.map((f) => (f.id === id ? { ...f, state: 'progress', progress: 10 } : f)))" /></template>
+    <template v-else-if="tag === 'HrBanner'"><div class="stack flush">
+      <HrBanner v-if="bannerOpen" v-model:page="bannerPage" :pages="2" color="primary" :title="bannerPage === 1 ? 'Fastpay is now on for your account' : 'Tap to Pay works on iPhone'" text="Take your first payment with a payment link, invoice or funnel." dismissible @dismiss="bannerOpen = false"><template #actions><HrButton variant="link" theme="neutral" size="sm">Learn more</HrButton><HrButton variant="link" size="sm">Create payment link</HrButton></template></HrBanner>
+      <HrBanner color="warning" title="Payouts are paused" text="Add your EIN to restart payouts. Payments keep working." />
+      <HrBanner color="error" title="We couldn’t reach your bank" />
+      <HrBanner color="success" title="Bank account verified" />
+      <HrBanner color="gray" title="Scheduled maintenance Sunday 2–3 AM" />
+      <HrBanner title="Default (white) banner" text="It has no border, so on a white page only the text shows." />
+    </div></template>
+    <template v-else-if="tag === 'HrSkeleton'"><div class="row"><HrSkeleton type="circle" /><HrSkeleton type="doughnut" width="96px" height="96px" /><div class="stack" style="flex: 1; min-width: 220px"><HrSkeleton type="text" :lines="3" /><HrSkeleton type="bar" /><HrSkeleton type="block" height="80px" /></div></div></template>
     <template v-else-if="tag === 'HrAppShell'"><p class="note">The app shell wraps every FastPay screen. <a href="#/p/fastpay/dashboard">Open it in the playground →</a></p></template>
   </div>
 </template>
@@ -62,6 +101,8 @@ const tagFor = (st: string) => (st === 'Succeeded' ? 'success' : st === 'Dispute
 .demo { display: flex; flex-direction: column; gap: 16px; }
 .row { display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-start; }
 .tip { padding-top: 84px; }
+.tall { min-height: 420px; align-content: flex-start; }
+.flush { margin: -12px; }
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
 .grid4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
 .stack { display: flex; flex-direction: column; gap: 12px; }
