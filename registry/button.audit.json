@@ -1,0 +1,254 @@
+{
+  "component": "Button",
+  "figmaNode": "26682:45841",
+  "figmaUrl": "https://www.figma.com/design/emjjdhZIMlqbszmzP9PdS6/HighRise-1.1?node-id=26682-45841",
+  "checked": "2026-11-06",
+  "variantsInFigma": 2000,
+  "variantsInCode": "all (props: variant, theme, size, iconOnly; states via :hover :active :focus-visible :disabled)",
+  "status": "matches-with-open-questions",
+  "gaps": [
+    {
+      "variant": "Primary / Primary / Hover",
+      "property": "background",
+      "figma": "blue/800",
+      "othersUse": "blue/700",
+      "codeUses": "Figma value, unchanged",
+      "severity": "needs-design-decision",
+      "summary": "Primary / Primary / Hover: background is blue/800 in Figma, but the other themes use blue/700. Code uses Figma value, unchanged."
+    },
+    {
+      "variant": "Primary / Primary / Active",
+      "property": "border",
+      "figma": "blue/600",
+      "othersUse": "blue/900",
+      "codeUses": "Figma value, unchanged",
+      "severity": "needs-design-decision",
+      "summary": "Primary / Primary / Active: border is blue/600 in Figma, but the other themes use blue/900. Code uses Figma value, unchanged."
+    },
+    {
+      "variant": "Primary / Primary / Focussed",
+      "property": "background",
+      "figma": "blue/800",
+      "othersUse": "blue/700",
+      "codeUses": "Figma value, unchanged",
+      "severity": "needs-design-decision",
+      "summary": "Primary / Primary / Focussed: background is blue/800 in Figma, but the other themes use blue/700. Code uses Figma value, unchanged."
+    },
+    {
+      "variant": "Primary / Primary / Focussed",
+      "property": "border",
+      "figma": "blue/600",
+      "othersUse": "blue/700",
+      "codeUses": "Figma value, unchanged",
+      "severity": "needs-design-decision",
+      "summary": "Primary / Primary / Focussed: border is blue/600 in Figma, but the other themes use blue/700. Code uses Figma value, unchanged."
+    },
+    {
+      "variant": "Primary / Neutral / Focussed",
+      "property": "shadow / focus ring",
+      "figma": "4px gray-100",
+      "othersUse": "xs focused 4px gray-100",
+      "codeUses": "the value the other four themes use",
+      "severity": "likely-figma-error",
+      "summary": "Primary / Neutral / Focussed: shadow / focus ring is 4px gray-100 in Figma, but the other themes use xs focused 4px gray-100. Code uses the value the other four themes use."
+    },
+    {
+      "variant": "Secondary / Neutral / Default",
+      "property": "text colour",
+      "figma": "gray/600",
+      "othersUse": "gray/700",
+      "codeUses": "Figma value, unchanged",
+      "severity": "needs-design-decision",
+      "summary": "Secondary / Neutral / Default: text colour is gray/600 in Figma, but the other themes use gray/700. Code uses Figma value, unchanged."
+    },
+    {
+      "variant": "Secondary / Primary / Disabled",
+      "property": "text colour",
+      "figma": "blue/200",
+      "othersUse": "blue/300",
+      "codeUses": "Figma value, unchanged",
+      "severity": "needs-design-decision",
+      "summary": "Secondary / Primary / Disabled: text colour is blue/200 in Figma, but the other themes use blue/300. Code uses Figma value, unchanged."
+    },
+    {
+      "variant": "Secondary / Primary / Disabled",
+      "property": "shadow / focus ring",
+      "figma": "-",
+      "othersUse": "xs",
+      "codeUses": "Figma value, unchanged",
+      "severity": "needs-design-decision",
+      "summary": "Secondary / Primary / Disabled: shadow / focus ring is - in Figma, but the other themes use xs. Code uses Figma value, unchanged."
+    },
+    {
+      "variant": "Secondary / Neutral / Disabled",
+      "property": "shadow / focus ring",
+      "figma": "-",
+      "othersUse": "xs",
+      "codeUses": "Figma value, unchanged",
+      "severity": "needs-design-decision",
+      "summary": "Secondary / Neutral / Disabled: shadow / focus ring is - in Figma, but the other themes use xs. Code uses Figma value, unchanged."
+    },
+    {
+      "variant": "Tertiary / Neutral / Default",
+      "property": "text colour",
+      "figma": "gray/600",
+      "othersUse": "gray/700",
+      "codeUses": "Figma value, unchanged",
+      "severity": "needs-design-decision",
+      "summary": "Tertiary / Neutral / Default: text colour is gray/600 in Figma, but the other themes use gray/700. Code uses Figma value, unchanged."
+    },
+    {
+      "variant": "Tertiary / Primary / Hover",
+      "property": "border",
+      "figma": "blue/200",
+      "othersUse": "blue/100",
+      "codeUses": "Figma value, unchanged",
+      "severity": "needs-design-decision",
+      "summary": "Tertiary / Primary / Hover: border is blue/200 in Figma, but the other themes use blue/100. Code uses Figma value, unchanged."
+    },
+    {
+      "variant": "Tertiary / Neutral / Hover",
+      "property": "border",
+      "figma": "gray/200",
+      "othersUse": "gray/100",
+      "codeUses": "Figma value, unchanged",
+      "severity": "needs-design-decision",
+      "summary": "Tertiary / Neutral / Hover: border is gray/200 in Figma, but the other themes use gray/100. Code uses Figma value, unchanged."
+    },
+    {
+      "variant": "Tertiary / Primary / Active",
+      "property": "border",
+      "figma": "blue/300",
+      "othersUse": "blue/50",
+      "codeUses": "Figma value, unchanged",
+      "severity": "needs-design-decision",
+      "summary": "Tertiary / Primary / Active: border is blue/300 in Figma, but the other themes use blue/50. Code uses Figma value, unchanged."
+    },
+    {
+      "variant": "Tertiary / Neutral / Active",
+      "property": "border",
+      "figma": "gray/300",
+      "othersUse": "gray/50",
+      "codeUses": "Figma value, unchanged",
+      "severity": "needs-design-decision",
+      "summary": "Tertiary / Neutral / Active: border is gray/300 in Figma, but the other themes use gray/50. Code uses Figma value, unchanged."
+    },
+    {
+      "variant": "Tertiary / Primary / Focussed",
+      "property": "border",
+      "figma": "blue/200",
+      "othersUse": "blue/100",
+      "codeUses": "Figma value, unchanged",
+      "severity": "needs-design-decision",
+      "summary": "Tertiary / Primary / Focussed: border is blue/200 in Figma, but the other themes use blue/100. Code uses Figma value, unchanged."
+    },
+    {
+      "variant": "Tertiary / Neutral / Focussed",
+      "property": "border",
+      "figma": "gray/200",
+      "othersUse": "gray/100",
+      "codeUses": "Figma value, unchanged",
+      "severity": "needs-design-decision",
+      "summary": "Tertiary / Neutral / Focussed: border is gray/200 in Figma, but the other themes use gray/100. Code uses Figma value, unchanged."
+    },
+    {
+      "variant": "Tertiary / Neutral / Focussed",
+      "property": "shadow / focus ring",
+      "figma": "4px gray-100",
+      "othersUse": "xs focused 4px gray-100",
+      "codeUses": "the value the other four themes use",
+      "severity": "likely-figma-error",
+      "summary": "Tertiary / Neutral / Focussed: shadow / focus ring is 4px gray-100 in Figma, but the other themes use xs focused 4px gray-100. Code uses the value the other four themes use."
+    },
+    {
+      "variant": "Ghost / Neutral / Default",
+      "property": "text colour",
+      "figma": "gray/600",
+      "othersUse": "gray/700",
+      "codeUses": "Figma value, unchanged",
+      "severity": "needs-design-decision",
+      "summary": "Ghost / Neutral / Default: text colour is gray/600 in Figma, but the other themes use gray/700. Code uses Figma value, unchanged."
+    },
+    {
+      "variant": "Ghost / Primary / Hover",
+      "property": "background",
+      "figma": "blue/100",
+      "othersUse": "blue/50",
+      "codeUses": "Figma value, unchanged",
+      "severity": "needs-design-decision",
+      "summary": "Ghost / Primary / Hover: background is blue/100 in Figma, but the other themes use blue/50. Code uses Figma value, unchanged."
+    },
+    {
+      "variant": "Ghost / Primary / Active",
+      "property": "background",
+      "figma": "blue/200",
+      "othersUse": "blue/100",
+      "codeUses": "Figma value, unchanged",
+      "severity": "needs-design-decision",
+      "summary": "Ghost / Primary / Active: background is blue/200 in Figma, but the other themes use blue/100. Code uses Figma value, unchanged."
+    },
+    {
+      "variant": "Ghost / Primary / Focussed",
+      "property": "background",
+      "figma": "blue/100",
+      "othersUse": "blue/50",
+      "codeUses": "Figma value, unchanged",
+      "severity": "needs-design-decision",
+      "summary": "Ghost / Primary / Focussed: background is blue/100 in Figma, but the other themes use blue/50. Code uses Figma value, unchanged."
+    },
+    {
+      "variant": "Ghost / Primary / Disabled",
+      "property": "text colour",
+      "figma": "blue/200",
+      "othersUse": "blue/300",
+      "codeUses": "Figma value, unchanged",
+      "severity": "needs-design-decision",
+      "summary": "Ghost / Primary / Disabled: text colour is blue/200 in Figma, but the other themes use blue/300. Code uses Figma value, unchanged."
+    },
+    {
+      "variant": "Link / Success / Default",
+      "property": "shadow / focus ring",
+      "figma": "xs focused 4px success-100",
+      "othersUse": "-",
+      "codeUses": "the value the other four themes use",
+      "severity": "likely-figma-error",
+      "summary": "Link / Success / Default: shadow / focus ring is xs focused 4px success-100 in Figma, but the other themes use -. Code uses the value the other four themes use."
+    },
+    {
+      "variant": "Link / Success / Hover",
+      "property": "shadow / focus ring",
+      "figma": "xs focused 4px success-100",
+      "othersUse": "-",
+      "codeUses": "the value the other four themes use",
+      "severity": "likely-figma-error",
+      "summary": "Link / Success / Hover: shadow / focus ring is xs focused 4px success-100 in Figma, but the other themes use -. Code uses the value the other four themes use."
+    },
+    {
+      "variant": "Link / Success / Active",
+      "property": "shadow / focus ring",
+      "figma": "xs focused 4px success-100",
+      "othersUse": "-",
+      "codeUses": "the value the other four themes use",
+      "severity": "likely-figma-error",
+      "summary": "Link / Success / Active: shadow / focus ring is xs focused 4px success-100 in Figma, but the other themes use -. Code uses the value the other four themes use."
+    },
+    {
+      "variant": "Link / Primary / Disabled",
+      "property": "text colour",
+      "figma": "blue/200",
+      "othersUse": "blue/300",
+      "codeUses": "Figma value, unchanged",
+      "severity": "needs-design-decision",
+      "summary": "Link / Primary / Disabled: text colour is blue/200 in Figma, but the other themes use blue/300. Code uses Figma value, unchanged."
+    },
+    {
+      "variant": "Link / Success / Disabled",
+      "property": "shadow / focus ring",
+      "figma": "xs focused 4px success-100",
+      "othersUse": "-",
+      "codeUses": "the value the other four themes use",
+      "severity": "likely-figma-error",
+      "summary": "Link / Success / Disabled: shadow / focus ring is xs focused 4px success-100 in Figma, but the other themes use -. Code uses the value the other four themes use."
+    }
+  ]
+}

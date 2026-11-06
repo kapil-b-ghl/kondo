@@ -1,0 +1,8 @@
+*, *::before, *::after { box-sizing: border-box; }
+body {
+  margin: 0;
+  font: var(--hr-text-lg);
+  color: var(--hr-text-neutral-title-1);
+  background: var(--hr-surface-base);
+  -webkit-font-smoothing: antialiased;
+}

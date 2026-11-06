@@ -1,0 +1,87 @@
+/* ==========================================================================
+   HighRise semantic tokens — names from "HighRise 1.2 Foundations"
+   (collection Semantic-Colors). Use these in components and prototypes.
+   Never use primitives (--hr-color-*) directly outside this file.
+
+   STATUS: names verified against the 1.2 Foundations library.
+           VALUES UNVERIFIED — each is mapped to the 1.1 primitive that
+           HighRise 1.1 components use for that role. Replace with the real
+           1.2 values once the Foundations file is shared. Tracked in
+           registry/tokens.audit.json.
+   ========================================================================== */
+:root {
+  /* surface */
+  --hr-surface-base:    var(--hr-color-neutral-gray-50);    /* page / app background */
+  --hr-surface-sunken:  var(--hr-color-neutral-gray-100);   /* inset wells */
+  --hr-surface-raised:  var(--hr-color-neutral-white-base); /* cards, list groups, tiles */
+  --hr-surface-overlay: var(--hr-color-neutral-white-base); /* modals, sheets, menus, popovers */
+
+  /* text — neutral */
+  --hr-text-neutral-title-1:  var(--hr-color-neutral-gray-900);
+  --hr-text-neutral-title-2:  var(--hr-color-neutral-gray-800);
+  --hr-text-neutral-body-1:   var(--hr-color-neutral-gray-700);
+  --hr-text-neutral-body-2:   var(--hr-color-neutral-gray-600);
+  --hr-text-neutral-base:     var(--hr-color-neutral-gray-500);
+  --hr-text-neutral-inactive: var(--hr-color-neutral-gray-400);
+  --hr-text-on-color:         var(--hr-color-neutral-white-base);
+  /* text — primary / status */
+  --hr-text-primary-title-1: var(--hr-color-primary-blue-800);
+  --hr-text-primary-body-1:  var(--hr-color-primary-blue-700);
+  --hr-text-primary-inactive-1: var(--hr-color-primary-blue-300);
+  --hr-text-error-title-1:   var(--hr-color-secondary-error-800);
+  --hr-text-error-body-1:    var(--hr-color-secondary-error-700);
+  --hr-text-warning-title-1: var(--hr-color-secondary-warning-800);
+  --hr-text-warning-body-1:  var(--hr-color-secondary-warning-700);
+  --hr-text-success-title-1: var(--hr-color-secondary-success-800);
+  --hr-text-success-body-1:  var(--hr-color-secondary-success-700);
+
+  /* background */
+  --hr-background-neutral-base:     var(--hr-color-neutral-white-base);
+  --hr-background-neutral-subtle-0: var(--hr-color-neutral-gray-25);
+  --hr-background-neutral-subtle-1: var(--hr-color-neutral-gray-50);
+  --hr-background-neutral-subtle-2: var(--hr-color-neutral-gray-100);
+  --hr-background-primary-default:  var(--hr-color-primary-blue-600);
+  --hr-background-primary-subtle-1: var(--hr-color-primary-blue-50);
+  --hr-background-primary-subtle-2: var(--hr-color-primary-blue-100);
+  --hr-background-error-default:    var(--hr-color-secondary-error-600);
+  --hr-background-error-subtle-1:   var(--hr-color-secondary-error-50);
+  --hr-background-warning-default:  var(--hr-color-secondary-warning-600);
+  --hr-background-warning-subtle-1: var(--hr-color-secondary-warning-50);
+  --hr-background-success-default:  var(--hr-color-secondary-success-600);
+  --hr-background-success-subtle-1: var(--hr-color-secondary-success-50);
+
+  /* border */
+  --hr-border-neutral-base:     var(--hr-color-neutral-gray-300);
+  --hr-border-neutral-subtle-1: var(--hr-color-neutral-gray-200);
+  --hr-border-neutral-subtle-0: var(--hr-color-neutral-gray-100);
+  --hr-border-primary-default:  var(--hr-color-primary-blue-600);
+  --hr-border-primary-subtle-1: var(--hr-color-primary-blue-300);
+  --hr-border-error-default:    var(--hr-color-secondary-error-500);
+  --hr-border-error-subtle-1:   var(--hr-color-secondary-error-300);
+  --hr-border-warning-subtle-1: var(--hr-color-secondary-warning-300);
+  --hr-border-success-subtle-1: var(--hr-color-secondary-success-300);
+  --hr-border-width-default: 1px;
+
+  /* icon */
+  --hr-icon-neutral-base:     var(--hr-color-neutral-gray-500);
+  --hr-icon-neutral-subtle-0: var(--hr-color-neutral-gray-400);
+  --hr-icon-neutral-intense-0:var(--hr-color-neutral-gray-700);
+  --hr-icon-primary-default:  var(--hr-color-primary-blue-600);
+  --hr-icon-error-default:    var(--hr-color-secondary-error-600);
+  --hr-icon-warning-default:  var(--hr-color-secondary-warning-600);
+  --hr-icon-success-default:  var(--hr-color-secondary-success-600);
+
+  /* focus rings (Figma effect styles "Focus ring/xs focused 4px *") */
+  --hr-focus-ring-primary: 0 0 0 4px var(--hr-color-primary-blue-100);
+  --hr-focus-ring-neutral: 0 0 0 4px var(--hr-color-neutral-gray-100);
+  --hr-focus-ring-error:   0 0 0 4px var(--hr-color-secondary-error-100);
+
+  /* type ramp (Figma text styles, Inter) */
+  --hr-text-xs:  var(--hr-font-size-xs)/var(--hr-font-line-height-xs) var(--hr-font-family);
+  --hr-text-sm:  var(--hr-font-size-sm)/var(--hr-font-line-height-sm) var(--hr-font-family);
+  --hr-text-md:  var(--hr-font-size-md)/var(--hr-font-line-height-md) var(--hr-font-family);
+  --hr-text-lg:  var(--hr-font-size-lg)/var(--hr-font-line-height-lg) var(--hr-font-family);   /* body default */
+  --hr-text-2xl: var(--hr-font-size-2xl)/var(--hr-font-line-height-2xl) var(--hr-font-family);
+  --hr-text-3xl: var(--hr-font-size-3xl)/var(--hr-font-line-height-3xl) var(--hr-font-family);
+  --hr-text-5xl: var(--hr-font-size-5xl)/var(--hr-font-line-height-5xl) var(--hr-font-family);
+}
