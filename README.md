@@ -6,7 +6,7 @@ playground where we prototype by building with those same components.
 | Folder | What's in it |
 | --- | --- |
 | `tokens/primitives.json` | Every primitive token, extracted from Figma (colour, spacing, radius, type). |
-| `src/tokens/` | Generated `primitives.css` + hand-mapped `semantic.css` (1.2 Foundations names). |
+| `src/tokens/` | Generated `primitives.css` + `semantic.css` (semantic roles derived from how 1.1 components use primitives). |
 | `specs/` | Raw component specs pulled from Figma. Generators read these. |
 | `src/components/` | One folder per HighRise component (`HrButton`, `HrInput`, ...). |
 | `registry/` | The audit: status of each component against Figma, gaps in plain language, Figma node links. |
